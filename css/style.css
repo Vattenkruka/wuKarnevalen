@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 body{
 	background-color:f4f4f4;
 	color:#555;
@@ -5,50 +8,51 @@ body{
 	font-size:16px;
 	line-height:1.6em;
 	margin:0;
+	
 }
 
-a{
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+}
+
+ul li {
+	font-family: Benguiat-BoldCondensed, Arial, Helvetica;
+	float: left;
+	width:200px;
+	height: 40px;
+	background-color: grey;
+	line-height: 40px;
+	text-align: center;
+	font-size:20;
+	opacity: 0.8;
+	margin-right: 2px;
+}
+
+ul li a{
 	text-decoration: none;
-	color:#000;
+	color: white;
+	display: block;
 }
 
-a:hover {
-	background-color: purple;
+ul li a:hover{
+	color:green;
 }
 
-a:active {
-	background color:red;
+ul li ul li{
+	display: none;
 }
 
-.container{
-	width:80%;
-	margin:auto;
-	overflow:hidden;
+ul li:hover ul li{
+	display:block;
 }
-
 #main-header{
 	background-color:aqua;
 	color:#fff;
 }
 
-#navbar{
-	background-color:#333;
-	color:gray;
-}
 
-#navbar ul{
-	padding:0;
-	list-style: none;
-}
 
-#navbar li{
-	display:inline;
-}
 
-#navbar a{
-	color:#fff;
-	text-decoration: none;
-	font-size:18px;
-	padding-right:15px;
-}
 
