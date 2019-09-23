@@ -36,7 +36,7 @@ ul li a{
 }
 
 ul li a:hover{
-	color:rgb(251,91,137);
+	color:red;
 }
 
 ul li ul li{
