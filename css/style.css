@@ -36,7 +36,7 @@ ul li a{
 }
 
 ul li a:hover{
-	color:green;
+	color:rgb(251,91,137);
 }
 
 ul li ul li{
@@ -48,7 +48,7 @@ ul li:hover ul li{
 }
 #main-header{
 	background-color:white;
-	color:pink;
+	color:rgb(251,91,137);
 	text-align: center;
 	font-size: 40px;
 
