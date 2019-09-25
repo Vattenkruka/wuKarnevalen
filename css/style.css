@@ -89,18 +89,22 @@ header .img-logga{
 
 .box-1{
 	flex:1;
+	text-align:center;
 }
 
 .box-1 h3{
 	font-size:28px
 
+
 }
 .box-2{
 	flex:1;
+	text-align:center;
 }
 
 .box-3{
 	flex:1;
+	text-align:center;
 }
 
 .container-2-box{
