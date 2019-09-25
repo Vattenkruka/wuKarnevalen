@@ -6,8 +6,16 @@ body{
 	font-family: Benguiat-BoldCondensed, Arial, Helvetica;
 	font-size:16px;
 	line-height:1.6em;
-	margin:0;
 	
+}
+html, body {
+	margin:0;
+	padding:0;
+}
+header {
+	position:-webkit-sticky;
+	position:sticky;
+	top: 0;
 }
 
 header ul {
@@ -54,19 +62,33 @@ header ul li:hover ul li{
 	color:rgb(251,91,137);
 	text-align: center;
 	font-size: 40px;
-
+	margin:0;
+	padding:0;
+}
+.container{
+	background-color: black;
+	height:20%;
+	padding:0;
+	margin:0;
+	top:0;
+	padding:0;
+	margin:0;
+	border:0;
 
 }
 
 header .img-logga{
-	background-image: url(../images/LundaKarnevalen2022Logga.png);
 	width:127px;
-	height:141px;
+	height:60px;
 	float: right;
-	top:8px;
+	top: 15%;
 	position: absolute;
 	right:16px;
+	text-align:center;
 
+}
+.Logga{
+	width:50%;
 }
 	
 }
