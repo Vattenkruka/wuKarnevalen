@@ -151,7 +151,7 @@ border: .2em solid;
 }
 
 .bild-1-wrapper{
-	max-width:80%;
+	max-width:100%;
 	border: none !important;
 	text-align:center;
 }
@@ -165,7 +165,7 @@ border: .2em solid;
 }
 
 .bild-2-wrapper{
-	max-width:80%;
+	max-width:100%;
 	border: none !important;
 	text-align:center;
 }
