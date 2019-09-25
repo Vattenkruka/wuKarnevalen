@@ -123,6 +123,7 @@ header .img-logga{
 .NyhetWrapper {
 	width: 100%;
 	text-align:center;
+	border: none !important;
 }
 .nyhet1{
 	width:100%;
@@ -146,7 +147,8 @@ border: .2em solid;
 }
 
 .bild-1-wrapper{
-	max-width:80%
+	max-width:80%;
+	border: none !important;
 }
 
 .Bild-2{
@@ -158,5 +160,6 @@ border: .2em solid;
 }
 
 .bild-2-wrapper{
-	max-width:80%
+	max-width:80%;
+	border: none !important;
 }
