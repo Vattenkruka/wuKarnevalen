@@ -149,6 +149,7 @@ border: .2em solid;
 .bild-1-wrapper{
 	max-width:80%;
 	border: none !important;
+	text-align:center;
 }
 
 .Bild-2{
@@ -162,4 +163,5 @@ border: .2em solid;
 .bild-2-wrapper{
 	max-width:80%;
 	border: none !important;
+	text-align:center;
 }
