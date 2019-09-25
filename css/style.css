@@ -124,13 +124,19 @@ header .img-logga{
 	width: 100%;
 	text-align:center;
 }
-.img-info{
+.nyhet1{
 	width:100%;
 }
-.Bild {
+.nyhetsbild1 {
 	width:40%;
-
 }
+.nyhet2{
+	width:100%;
+}
+.nyhetsbild2{
+	width:40%;
+}
+
 .Bild-1{
 
 max-width:80%;
