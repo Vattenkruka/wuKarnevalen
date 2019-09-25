@@ -14,12 +14,13 @@ header ul {
 	margin: 0px;
 	padding: 0px;
 	list-style:none;
+	width:100%;
 }
 
 header ul li {
 	font-family: Benguiat-BoldCondensed, Arial, Helvetica;
 	float: left;
-	width:474px;
+	width:24%;
 	height: 40px;
 	background-color: grey;
 	line-height: 40px;
@@ -81,6 +82,9 @@ header .img-logga{
 	flex:1;
 }
 
+.box-1 h3{
+	font-size:20px 
+}
 .box-2{
 	flex:1;
 }
