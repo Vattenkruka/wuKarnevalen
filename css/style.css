@@ -206,6 +206,7 @@ header .img-logga{
 	padding: 40px 40px;
 	color:white;
 	display:flex;
+	font-size:100%;
 }
 
 .right-footer{
@@ -313,6 +314,16 @@ border-radius:8px;
 	margin:0;
 	padding:0;
 
+}
+.left-footer{
+	font-size:50%;
+}
+.right-footer{
+	font-size:50%;
+}
+.right-footer h2{
+	margin-left:20%;
+	
 }
 header .img-logga{
 	display:none;
