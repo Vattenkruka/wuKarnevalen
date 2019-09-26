@@ -394,10 +394,25 @@ header .img-logga{
 }
 .box-3-ansök{
 
-	width:55%;
+	width:50%;
+}
+.box-2-ansök{
+	float:left;
 }
 
-
+form{
+	width:90%;
+	height:auto;
+	font-size:100%;	
+}
+input{
+	width:175%;
+	font-size:80%;
+	border:1px solid;
+}
+.submitbtn{
+	width:20%;
+}
 }
 
 /*---Submitknapp-form-Ansök--- */
