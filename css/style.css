@@ -280,6 +280,15 @@ border-radius:8px;
 	border: none !important;
 	text-align:center;
 }
+
+.hide-bliKarnevalist{
+	display:none;
+}
+
+.hide-omKarnevalen{
+	display:none;
+}
+
 @media only screen and (max-width: 1024px)  {
 	.box-1{
 		display:none;
@@ -294,7 +303,17 @@ border-radius:8px;
 	header .img-logga{
 		display:none;
 	}
+.hide-bliKarnevalist{
+	display:block;
 }
+
+.hide-omKarnevalen{
+	display:block;
+}
+
+}
+
+
 @media only screen and (max-width: 767px)  {
 	.box-1{
 		display:none;	
@@ -331,7 +350,7 @@ header .img-logga{
 
 
 }
-
-
-
 }
+
+
+
