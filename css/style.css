@@ -46,7 +46,7 @@ header ul li a{
 	text-decoration: none;
 	color: white;
 	display:block;
-	font-size:15px;
+	font-size:60%;
 }
 
 header ul li a:hover{
@@ -65,7 +65,7 @@ header ul li:hover ul li{
 	background-color:white;
 	color:rgb(251,91,137);
 	text-align: center;
-	font-size: 40px;
+	font-size: 220%;
 	margin:0;
 	padding:0;
 
@@ -232,5 +232,35 @@ border-radius:8px;
 	}
 	.box-3{
 		width:40%;
+	}
+	header ul li:active ul li{
+	display:block;
+	width:100%;
+}
+@media only screen and (max-width: 767px)  {
+	.box-1{
+		display:none;	
+	}
+	.box-3{
+		display:none;
+	}
+	header ul li:active ul li{
+	display:block;
+	width:100%;
+}
+#main-header{
+	background-color:white;
+	color:rgb(251,91,137);
+	text-align: center;
+	font-size: 100%;
+	margin:0;
+	padding:0;
+
+}
+header .img-logga{
+	display:none;
+}
+
+
 	}
 }
