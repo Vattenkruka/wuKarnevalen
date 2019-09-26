@@ -190,14 +190,19 @@ header .img-logga{
 	background-color: #222;
 	padding: 40px 40px;
 	color:white;
+	display:flex;
 }
 
 .right-footer{
-	width:40%;
+	flex:1;
+	background-color:inherit;
+	text-align:center;
 }
 
 .left-footer{
-	width:40%;
+	flex:1;
+	background-color:inherit;
+	text-align:center;
 }
 
 .NyhetWrapper {
