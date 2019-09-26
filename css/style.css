@@ -50,7 +50,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-	color:red;
+	background-color:#FB288B;
 }
 
 header ul li ul li{
@@ -271,6 +271,10 @@ border-radius:8px;
 	header ul li:active ul li{
 	display:block;
 	width:100%;
+	}
+	header .img-logga{
+		display:none;
+	}
 }
 @media only screen and (max-width: 767px)  {
 	.box-1{
