@@ -283,6 +283,17 @@ header .img-logga{
 	border-radius:50%;
 }
 
+.omKarneval{
+	width:100%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+}
+.omKarneval p{
+	word-wrap: break-word;
+}
+
+
 .Bild-1{
 
 max-width:90%;
@@ -322,6 +333,16 @@ border-radius:8px;
 	width:100%;
 }
 
+.box-2-omKarneval{
+	text-align: center;
+	max-width: 100%
+
+}
+.box-2-omKarneval article p{
+	word-wrap:break-all;
+	margin-right: 2%
+}
+
 @media only screen and (max-width: 1024px)  {
 	.box-1{
 		display:none;
@@ -345,6 +366,15 @@ border-radius:8px;
 }
 .footer{
 	padding:13% 45px;
+}
+
+form {
+	width:100%;
+	height:auto;
+	font-size:100%;	
+}
+input{
+	border:1px solid;
 }
 
 }
