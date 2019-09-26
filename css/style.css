@@ -288,6 +288,9 @@ border-radius:8px;
 .hide-omKarnevalen{
 	display:none;
 }
+.Hittahitbild{
+	width:100%;
+}
 
 @media only screen and (max-width: 1024px)  {
 	.box-1{
@@ -355,6 +358,7 @@ header .img-logga{
 }
 
 }
+
 }
 
 
