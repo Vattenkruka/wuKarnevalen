@@ -270,6 +270,17 @@ header .img-logga{
 	border-radius:50%;
 }
 
+.nyhet4{
+	width:100%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	margin-top:5%;
+}
+.nyhetsbild4{
+	width:40%;
+	border-radius:50%;
+}
 
 .Bild-1{
 
