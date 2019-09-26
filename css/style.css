@@ -50,7 +50,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-	color:red;
+	background-color:#FB288B;
 }
 
 header ul li ul li{
