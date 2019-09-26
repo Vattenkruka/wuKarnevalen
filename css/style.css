@@ -424,6 +424,110 @@ input{
 .submitbtn:hover{
 	opacity:0.9;
 }
+.container-2-nöje{
+	width:100%;
+	
+}
+.nöjenwrapper{
+	width:100%;
+	
+}
+.nöje1{
+	width:43.3%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	text-align:center;
+	display:inline-block;
+	margin-left:2.5%;
+	height:auto;
+}
+.nöjebild1{
+	width:32%;
+	border-radius:50%;
+	height:50%;
+}
+.nöje2{
+	width:43.3%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	text-align:center;
+	display:inline-block;
+	margin-left:2.5%;
+	height:auto;
+
+}
+.nöjebild2{
+	width:50%;
+	border-radius:50%;
+	height:50%;
+}
+.box-3-nöje{
+	width:100%;
+	display:flex;
+}
+.nöje3{
+	width:43.3%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	text-align:center;
+	display:inline-block;
+	margin-left:2.5%;
+	height:auto;
+}
+.nöjebild3{
+	width:32%;
+	border-radius:50%;
+	height:50%;
+}
+.nöje4{
+	width:43.3%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	text-align:center;
+	display:inline-block;
+	margin-left:2.5%;
+	height:auto;
+}
+.nöjebild4{
+	width:32%;
+	border-radius:50%;
+	height:50%;
+	}
+.nöje5{
+	width:43.3%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	text-align:center;
+	display:inline-block;
+	margin-left:2.5%;
+	height:auto;
+}
+.nöjebild5{
+	width:32%;
+	border-radius:50%;
+	height:50%;
+	}
+.nöje6{
+	width:43.3%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	text-align:center;
+	display:inline-block;
+	margin-left:2.5%;
+	height:auto;
+}
+.nöjebild6{
+	width:32%;
+	border-radius:50%;
+	height:50%;
+	}
+
 }
 
 
