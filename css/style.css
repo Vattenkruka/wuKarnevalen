@@ -149,6 +149,11 @@ header .img-logga{
 	font-size:28px;
 }
 
+.box-3-ansök{
+	flex:1;
+	text-align:center;
+}
+
 .container-2-box{
 	width:30%;
 }
@@ -252,6 +257,19 @@ header .img-logga{
 	width:40%;
 	border-radius:50%;
 }
+
+.nyhet3{
+	width:100%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	margin-top:5%;
+}
+.nyhetsbild3{
+	width:40%;
+	border-radius:50%;
+}
+
 
 .Bild-1{
 
