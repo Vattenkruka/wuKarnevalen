@@ -347,6 +347,15 @@ border-radius:8px;
 	padding:13% 45px;
 }
 
+form {
+	width:100%;
+	height:auto;
+	font-size:100%;	
+}
+input{
+	border:1px solid;
+}
+
 }
 
 
