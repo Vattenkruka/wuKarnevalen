@@ -203,7 +203,7 @@ header .img-logga{
 .footer {
 	width:calc(100% - 80px);
 	background-color: #222;
-	padding: 40px 40px;
+	padding: 5% 40px;
 	color:white;
 	display:flex;
 	font-size:100%;
@@ -310,7 +310,9 @@ border-radius:8px;
 .hide-omKarnevalen{
 	display:block;
 }
-
+.footer{
+	padding:13% 45px;
+}
 }
 
 
@@ -347,7 +349,9 @@ border-radius:8px;
 header .img-logga{
 	display:none;
 }
-
+.footer{
+	padding:20% 45px;
+}
 
 }
 }
