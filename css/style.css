@@ -160,7 +160,10 @@ header .img-logga{
 /*-----------------FOOTER------------*/
 
 .facebook-wrapper{
-	width:6%;
+	position:absolute;
+	margin-left:12%;
+	width:5%;
+	height:15%;
 }
 
 .facebooklogo{
@@ -168,19 +171,30 @@ header .img-logga{
 }
 
 .twitter-wrapper{
-	width:6%;
+	position:absolute;
+	margin-left:19%;
+	width:3.5%;
+	margin-top:0.45%;
+	
 }
 .twitterlogo{
 	width:100%;
+	border-radius:10%;
 }
 .instagram-wrapper{
-	width:6%;
+	position:absolute;
+	margin-left:25%;
+	width:4.1%;
+	margin-top:0.18%;
 }
 .instragramlogo{
 	width:100%;
 }
 .youtube-wrapper{
-	width:6%;
+	position:absolute;
+	margin-left:31%;
+	width:5%;
+	margin-top:0.45%;
 }
 .youtubelogo{
 	width:100%;
@@ -300,5 +314,8 @@ header .img-logga{
 }
 
 
-	}
+}
+
+
+
 }
