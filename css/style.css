@@ -362,6 +362,9 @@ header .img-logga{
 /*---Submitknapp-form-Ansök--- */
 
 .submitbtn{
+	width:100%;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .submitbtn:hover{
