@@ -284,6 +284,10 @@ border-radius:8px;
 	display:none;
 }
 
+.hide-omKarnevalen{
+	display:none;
+}
+
 @media only screen and (max-width: 1024px)  {
 	.box-1{
 		display:none;
@@ -299,6 +303,10 @@ border-radius:8px;
 		display:none;
 	}
 .hide-bliKarnevalist{
+	display:block;
+}
+
+.hide-omKarnevalen{
 	display:block;
 }
 
