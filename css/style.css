@@ -235,6 +235,7 @@ header .img-logga{
 	text-align:center;
 	
 }
+
 .nyhet1{
 	width:100%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
@@ -385,6 +386,17 @@ header .img-logga{
 .footer{
 	padding:20% 45px;
 }
+
+.NyhetWrapper2 {
+	width: 80%;
+	text-align:center;
+
+}
+.box-3-ansök{
+
+	width:55%;
+}
+
 
 }
 
