@@ -177,14 +177,21 @@ header .img-logga{
 }
 .nyhet1{
 	width:100%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
 }
 .nyhetsbild1 {
 	width:40%;
-	border-radius:5;
+	border-radius:50%;
 	
 }
 .nyhet2{
 	width:100%;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:2%;
+	margin-top:5%;
 }
 .nyhetsbild2{
 	width:40%;
