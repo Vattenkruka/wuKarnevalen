@@ -123,8 +123,9 @@ header .img-logga{
 }
 
 .box-1{
-	flex:1;
 	text-align:center;
+	width:24%;
+
 }
 
 .box-1 h3{
@@ -141,8 +142,8 @@ header .img-logga{
 }
 
 .box-3{
-	flex:1;
 	text-align:center;
+	width:24%;
 }
 .box-3 h3{
 	font-size:28px;
