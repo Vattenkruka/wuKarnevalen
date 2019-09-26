@@ -463,15 +463,14 @@ input{
 	
 }
 .nöje1{
-	width:43.3%;
+	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
-	padding:2%;
+	padding:3%;
 	text-align:center;
 	display:inline-block;
-	margin-left:2.5%;
 	height:auto;
-	background-color:white;
+	background-color: #FFFBFF;
 }
 .nöjebild1{
 	width:32%;
@@ -479,13 +478,12 @@ input{
 	height:50%;
 }
 .nöje2{
-	width:43.3%;
+	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
-	padding:2%;
+	padding:3%;
 	text-align:center;
 	display:inline-block;
-	margin-left:2.5%;
 	height:auto;
 	background-color: #FFFBFF;
 
@@ -499,15 +497,15 @@ input{
 	width:100%;
 	display:flex;
 	background-color:pink;
+	text-align:center;
 }
 .nöje3{
-	width:43.3%;
+	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
-	padding:2%;
+	padding:3%;
 	text-align:center;
 	display:inline-block;
-	margin-left:2.5%;
 	height:auto;
 	background-color: #FFFBFF;
 	margin-top:2.5%;
@@ -518,13 +516,12 @@ input{
 	height:50%;
 }
 .nöje4{
-	width:43.3%;
+	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
-	padding:2%;
+	padding:3%;
 	text-align:center;
 	display:inline-block;
-	margin-left:2.5%;
 	height:auto;
 	background-color: #FFFBFF;
 }
@@ -534,30 +531,28 @@ input{
 	height:50%;
 	}
 .nöje5{
-	width:43.3%;
+	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
-	padding:2%;
+	padding:3%;
 	text-align:center;
 	display:inline-block;
-	margin-left:2.5%;
 	height:auto;
 	background-color: #FFFBFF;
 	margin-top:2.5%;
 }
 .nöjebild5{
-	width:32%;
+	width:%;
 	border-radius:50%;
 	height:50%;
 	}
 .nöje6{
-	width:43.3%;
+	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
-	padding:2%;
+	padding:3%;
 	text-align:center;
 	display:inline-block;
-	margin-left:2.5%;
 	height:auto;
 	background-color: #FFFBFF;
 }
