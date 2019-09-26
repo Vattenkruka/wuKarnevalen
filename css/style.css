@@ -359,6 +359,14 @@ header .img-logga{
 
 }
 
+/*---Submitknapp-form-Ansök--- */
+
+.submitbtn{
+}
+
+.submitbtn:hover{
+	opacity:0.9;
+}
 }
 
 
