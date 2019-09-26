@@ -206,6 +206,11 @@ header .img-logga{
 	text-align:center;
 }
 
+.left-footer a{
+	text-decoration: none;
+	color:white;
+}
+
 .NyhetWrapper {
 	width: 90%;
 	text-align:center;
