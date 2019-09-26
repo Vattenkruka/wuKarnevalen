@@ -472,11 +472,7 @@ input{
 	height:auto;
 	background-color: #FFFBFF;
 }
-.nöjebild1{
-	width:32%;
-	border-radius:50%;
-	height:50%;
-}
+
 .nöje2{
 	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
@@ -488,11 +484,7 @@ input{
 	background-color: #FFFBFF;
 
 }
-.nöjebild2{
-	width:50%;
-	border-radius:50%;
-	height:50%;
-}
+
 .box-3-nöje{
 	width:100%;
 	display:flex;
@@ -510,11 +502,7 @@ input{
 	background-color: #FFFBFF;
 	margin-top:2.5%;
 }
-.nöjebild3{
-	width:32%;
-	border-radius:50%;
-	height:50%;
-}
+
 .nöje4{
 	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
@@ -525,11 +513,7 @@ input{
 	height:auto;
 	background-color: #FFFBFF;
 }
-.nöjebild4{
-	width:32%;
-	border-radius:50%;
-	height:50%;
-	}
+
 .nöje5{
 	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
@@ -541,11 +525,7 @@ input{
 	background-color: #FFFBFF;
 	margin-top:2.5%;
 }
-.nöjebild5{
-	width:%;
-	border-radius:50%;
-	height:50%;
-	}
+
 .nöje6{
 	width:40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
@@ -556,14 +536,10 @@ input{
 	height:auto;
 	background-color: #FFFBFF;
 }
-.nöjebild6{
-	width:32%;
-	border-radius:50%;
-	height:50%;
-	}
+
 
 #myvideo{
-  z-index: -1;
+
 position:fixed;
 }
 
