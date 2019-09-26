@@ -226,3 +226,11 @@ border-radius:8px;
 	border: none !important;
 	text-align:center;
 }
+@media only screen and (max-width: 1024px)  {
+	.box-1{
+		display:none;
+	}
+	.box-3{
+		width:40%;
+	}
+}
