@@ -159,7 +159,32 @@ header .img-logga{
 }
 /*-----------------FOOTER------------*/
 
+.facebook-wrapper{
+	width:6%;
+}
 
+.facebooklogo{
+	width:100%;
+}
+
+.twitter-wrapper{
+	width:6%;
+}
+.twitterlogo{
+	width:100%;
+}
+.instagram-wrapper{
+	width:6%;
+}
+.instragramlogo{
+	width:100%;
+}
+.youtube-wrapper{
+	width:6%;
+}
+.youtubelogo{
+	width:100%;
+}
 .footer {
 	width:calc(100% - 80px);
 	background-color: #222;
@@ -168,7 +193,11 @@ header .img-logga{
 }
 
 .right-footer{
-	text-align: right;
+	width:40%;
+}
+
+.left-footer{
+	width:40%;
 }
 
 .NyhetWrapper {
