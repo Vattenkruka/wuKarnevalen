@@ -569,9 +569,9 @@ display:none;
 }
 
 
-#myvideo{
+#myVideo{
 
-position:fixed;
+width:100%;
 
 }
 
@@ -619,6 +619,24 @@ position:fixed;
 	text-align:center;
 	padding-left:25%;
 	padding-right:10%;
+
+}
+.artistwrapper{
+	width:70%;
+	padding-left:15%;
+	padding-right:15%;
+	text-align:center;
+	margin-top:5%;
+}
+.artister{
+	width:100%;
+	text-align:center;
+	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
+	border-radius: 5%;
+	padding:3%;
+	text-align:center;
+	height:auto;
+	background-color: #FFFBFF;
 
 }
 }
