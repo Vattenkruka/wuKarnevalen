@@ -547,6 +547,17 @@ position:fixed;
 .box-3-artister{
 	z-index:0;
 }
+.box-3-tåg{
+	text-align:center;
+}
+.färdväg{
+	width:70%;
+}
+.tåget-wrapper{
+	width:70%;
+	padding-left:15%;
+	padding-right:15%;
+}
 }
 }
 
