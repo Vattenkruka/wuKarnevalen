@@ -392,6 +392,16 @@ input{
 display:none;
 }
 
+.container-2-artist{
+	display:flex;
+	justify-content: space-around;
+	background-color: #FFFBFF;
+	font-family: Benguiat-BoldCondensed, Arial, Helvetica;
+	color:#404040;
+	width:100%;
+	background-image:url(https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+	min-height:80vh;
+}
 }
 
 
