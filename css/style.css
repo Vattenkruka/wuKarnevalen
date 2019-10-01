@@ -57,10 +57,30 @@ header ul li a:hover{
 header ul li ul li{
 	display: none;
 }
+header ul li ul li ul{
+	display:none;
+	position:absolute;
+	height:auto;
+	width:100%;
+	margin-left:100%;
+	margin-top:-10%;
+}
+header li li{
+	position:relative;
+	display:block;
+	float:none;
+}
+header ul li ul li ul a{
+	text-align:center;
+	display:block;
+}
 
-header ul li:hover ul li{
+header ul li:hover > ul li{
 	display:block;
 	width:100%;
+}
+header ul li ul li:hover >ul{
+	display:block;
 }
 #main-header{
 	background-color:white;
