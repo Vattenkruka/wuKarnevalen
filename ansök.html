@@ -58,34 +58,35 @@
 	<div class="container-2">
 		<div class="box-2-ansök"> <!--Main, FORMS-->
 			<h3> Ansök till Lundakarnevalen! </h3>
-			<form action="process.php" method="POST" id="my-form">
+			<div id="error"></div>
+			<form  method="POST" id="my-form"> <!--action="process.php" -->
 			<div>
 			<label>Förnamn *</label>
-			<input type="text" name="förnamn"
+			<input type="text" name="förnamn" id="förnamn"
 			placeholder="Enter first name" required>
 			</div>
 			<br>
 			<div>
 			<label>Efternamn *</label>
-			<input type="text" name="efternamn"
+			<input type="text" name="efternamn" id="efternamn" 
 			placeholder="Enter last name" required>
 			</div>
 			<br>
 			<div>
 			<label>Email *</label>
-			<input type="email" name="email"
+			<input type="email" name="email" id="email"
 			placeholder="Enter email" required>
 			</div>
 			<br>
 			<div>
 			<label>Telefon</label>
-			<input type="text" name="telefon"
+			<input type="text" name="telefon" id="telefon"
 			placeholder="Enter phone number">
 			</div>
 			<br>
 			<div>
-				<label>Sektion *</label>
-				<select name="section">
+				<label>Önskad Sektion *</label>
+				<select name="section" id="section">
 					<option value="administerIT">AdministerIt</option>
 					<option value="biljonsen">Biljonsen</option>
 					<option value="blädderiet">Blädderiet</option>
