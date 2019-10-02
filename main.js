@@ -16,6 +16,8 @@ let countDown = new Date('May 16, 2022 00:00:00').getTime(),
       
     }, second)
 
+//  Slide-functions
+
 var slideIndex = 0;
 showSlides();
 
