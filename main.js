@@ -1,19 +1,17 @@
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
+let countDown = new Date('May 16, 2022 00:00:00').getTime(),
+    x = setInterval(function() {
 
-			// FORM-VALIDATION-FOR-ANSÖK
-const myForm = document.querySelector('#my-form');
-const förnamnInput = document.querySelector('#förnamn');
-const efternamnInput = document.querySelector('#efternamn');
-const emailInput = document.querySelector('#email');
-const telefonInput = document.querySelector('#telefon');
-const sectionInput = document.querySelector('#section');
-const errorElement = document.getElementById('error');
+      let now = new Date().getTime(),
+          distance = countDown - now;
 
-myForm.addEventListener('submit', (e) => {
-	let messages = [];
-	if(förnamnInput.length<1){
-		messages.push('Vänlig skriv in hela ditt förnamn!');
-	}
-	if()
-}
-}
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+    }, second)
