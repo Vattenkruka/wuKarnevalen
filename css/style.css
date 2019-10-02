@@ -354,6 +354,10 @@ border-radius:8px;
 	text-align:center;
 }
 
+.mySlides1{
+	display:none;
+}
+
 .Bild-2{
 
 max-width:90%;
