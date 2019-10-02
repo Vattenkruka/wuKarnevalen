@@ -195,7 +195,7 @@ header .img-logga{
 
 .facebook-wrapper{
 	position:absolute;
-	margin-left:12%;
+	margin-left:5%;
 	width:5%;
 	height:15%;
 }
@@ -207,7 +207,7 @@ header .img-logga{
 
 .twitter-wrapper{
 	position:absolute;
-	margin-left:19%;
+	margin-left:12%;
 	width:3.5%;
 	margin-top:0.45%;
 	
@@ -218,7 +218,7 @@ header .img-logga{
 }
 .instagram-wrapper{
 	position:absolute;
-	margin-left:25%;
+	margin-left:18%;
 	width:4.1%;
 	margin-top:0.18%;
 }
@@ -227,7 +227,7 @@ header .img-logga{
 }
 .youtube-wrapper{
 	position:absolute;
-	margin-left:31%;
+	margin-left:24%;
 	width:5%;
 	margin-top:0.45%;
 }
@@ -235,9 +235,10 @@ header .img-logga{
 	width:100%;
 }
 .footer {
-	width:calc(100% - 80px);
+	width:100%;
 	background-color: #222;
-	padding: 5% 40px;
+	padding-top:5%;
+	padding-bottom:5%;
 	color:white;
 	display:flex;
 	font-size:100%;
@@ -257,6 +258,22 @@ header .img-logga{
 
 .left-footer a{
 	color:white;
+}
+.center-footer{
+	flex:1;
+	text-align:center;
+	
+
+}
+.center-footer li{
+	font-size:100%;
+	display:inline-block;
+	text-align:center;
+	margin-right:5%;
+}
+.center-footer li span{
+	display:block;
+	font-size:200%;
 }
 
 .NyhetWrapper {
@@ -447,7 +464,7 @@ display:none;
 
 }
 .left-footer{
-	font-size:50%;
+	font-size:50%
 }
 .right-footer{
 	font-size:50%;
