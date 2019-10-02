@@ -352,10 +352,29 @@ border-radius:8px;
 	max-width:100%;
 	border: none !important;
 	text-align:center;
+	position:relative;
 }
 
 .mySlides1, .mySlides2{
 	display:none;
+}
+
+.captionText{
+	color: #0a0a0a;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #0a0a0a;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 .Bild-2{
@@ -370,6 +389,7 @@ border-radius:8px;
 	max-width:100%;
 	border: none !important;
 	text-align:center;
+	position:relative;
 }
 
 .hide-bliKarnevalist{
