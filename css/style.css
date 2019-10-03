@@ -419,7 +419,16 @@ border-radius:8px;
 	display:block;
 }
 .footer{
-	padding:13% 45px;
+	padding-top:5%;
+	padding-bottom:15%;
+	width:100%;
+
+}
+.right-footer h2{
+	margin-left:-25%;
+}
+.center-footer{
+	display:none;
 }
 
 form {
@@ -478,14 +487,16 @@ display:none;
 	font-size:50%;
 }
 .right-footer h2{
-	margin-left:20%;
+	margin-left:-25%;
+	
 	
 }
 header .img-logga{
 	display:none;
 }
 .footer{
-	padding:20% 45px;
+	padding-top:5%;
+	padding-bottom:20%;
 }
 
 .NyhetWrapper2 {
@@ -514,6 +525,9 @@ input{
 .box-3-artister-klass{
 
 display:none;
+}
+.center-footer{
+	display:none;
 }
 
 }
