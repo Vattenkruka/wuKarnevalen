@@ -47,3 +47,20 @@ function showSlides2() {
   slides[slideIndex2-1].style.display = "block";
   setTimeout(showSlides2, 2000); // Change image every 2 seconds
 }
+
+//Comment Section On FAQ-Page
+
+var comment = [
+{"Name": "Simon Simonsson", "Date": "2019-10-03", "Comment": "Dis is a comment"},
+{"Name": "Greger Simonsson", "Date": "2019-10-03", "Comment": "Dis is a comment2"},
+{"Name": "Greger Simonsson", "Date": "2019-10-03", "Comment": "Dis is a comment3"}	
+
+];
+
+for(var i=0;i<comment.length;i++){
+	var html ="<div class="
+}
+
+function commentSubmit(){
+	document.getElementById("commentForm").submit();
+}
