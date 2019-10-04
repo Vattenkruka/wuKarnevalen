@@ -175,15 +175,15 @@
 			<p> Enter the fields below <br> to submit a comment!</p>
 			<form  method="POST" id="commentForm">
 			<div>
-			<label>Name: </label>
+			<label>Name: *</label>
 			<input type="text" name="name"
-			placeholder="Enter Your Name!">
+			placeholder="Enter Your Name!" required>
 			</div>
 			<br>
 			<div>
-			<label>Comment: </label>
+			<label>Comment: *</label>
 			<textarea name="comment" form="commentForm" id="commentTextArea"
-			placeholder="Enter Your Comment!"></textarea>
+			placeholder="Enter Your Comment!" required></textarea>
 		</div>
 		<br>
 		<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"> Post!</button>
