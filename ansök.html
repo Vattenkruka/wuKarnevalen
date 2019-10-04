@@ -60,7 +60,7 @@
 		<div class="box-2-ansök"> <!--Main, FORMS-->
 			<h3> Ansök till Lundakarnevalen! </h3>
 			<div id="error"></div>
-			<form action="process.php" method="POST" id="my-form">
+			<form name="RegForm" action="/process.php" onsubmit="return validateForm()" method="POST" id="my-form">
 			<div>
 			<label>Förnamn *</label>
 			<input type="text" name="förnamn"
