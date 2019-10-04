@@ -509,6 +509,11 @@ border-radius:8px;
 }
 
 @media only screen and (max-width: 1024px)  {
+
+	p {
+		font-family:arial;
+	}
+	
 	.box-1{
 		display:none;
 	}
@@ -568,6 +573,21 @@ display:none;
 	min-height:80vh;
 	background-size:cover;
 }
+
+.commentInfo button{
+	width:60%;
+}
+
+.commentInfo input{
+	width:100px;
+	font-size:60%;
+}
+
+textarea{
+	resize:none;
+	height:30px;
+	width:80px;
+}
 }
 
 
@@ -591,6 +611,22 @@ display:none;
 	padding:0;
 
 }
+
+.commentInfo button{
+	width:60%;
+}
+
+.commentInfo input{
+	width:100px;
+	font-size:60%;
+}
+
+textarea{
+	resize:none;
+	height:30px;
+	width:80px;
+}
+
 .left-footer{
 	font-size:50%
 }
