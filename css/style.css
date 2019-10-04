@@ -23,6 +23,10 @@ header h1{
 	padding:0;
 	margin:0;
 }
+a{
+	text-decoration: none;
+	color:rgb(251,91,137);
+}
 
 header ul {
 	margin: 0px;
@@ -513,7 +517,7 @@ border-radius:8px;
 	p {
 		font-family:arial;
 	}
-	
+
 	.box-1{
 		display:none;
 	}
