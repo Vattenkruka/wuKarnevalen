@@ -602,6 +602,28 @@ textarea{
 
 
 @media only screen and (max-width: 767px)  {
+
+.artistwrapper img{
+	display:none;
+}
+
+.artistwrapper h2{
+	font-size:15px;
+}
+
+.artistwrapper h1{
+	color:white;
+}
+
+.artister-wrap {
+	display:inline-block;
+	align-items:center;
+	justify-content: center;
+}
+
+.artister-wrap .nöje1{
+
+}
 	.box-1{
 		display:none;	
 	}
@@ -703,11 +725,9 @@ display:none;
 }
 .container-2-nöje{
 	width:100%;
-	
 }
 .nöjenwrapper{
 	width:100%;
-	
 }
 .nöje1{
 	width:40%;
@@ -868,9 +888,9 @@ width:100%;
 	background-color: #FFFBFF;
 
 }
-.artist-bild4{
-	width:50%;
-	border-radius:8px;
+.artistwrapper img{
+	height:150px; 
+	width:200px;
 }
 }
 }
