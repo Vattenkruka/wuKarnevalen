@@ -613,6 +613,16 @@ textarea{
 
 @media only screen and (max-width: 767px)  {
 
+.artister-wrap .nöje1{
+width:95%;
+display:;
+
+}
+
+.Nöjenwrapper .nöje3{
+	width:80%;
+}
+
 .artistwrapper img{
 	display:none;
 }
