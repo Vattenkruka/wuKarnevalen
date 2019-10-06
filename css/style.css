@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
+#map{
+	height:100%;
+	
+}
 
 body{
 	
 	font-family: Benguiat-BoldCondensed, Arial, Helvetica;
 	font-size:16px;
-	line-height:1.6em;
+	/* line-height:1.6em; */
 	
 }
 html, body {
@@ -29,6 +31,7 @@ a{
 }
 
 header ul {
+	display: flex;
 	margin: 0px;
 	list-style:none;
 	width:100%;
@@ -38,7 +41,6 @@ header ul {
 
 header ul li {
 	font-family: Benguiat-BoldCondensed, Arial, Helvetica;
-	float: left;
 	width:25%;
 	height: 40px;
 	background-color:rgb(251,91,137);
@@ -59,6 +61,10 @@ header ul li a:hover{
 	background-color:#FB288B;
 }
 
+header ul li ul {
+	flex-direction: column;
+}
+
 header ul li ul li{
 	display: none;
 }
@@ -68,7 +74,7 @@ header ul li ul li ul{
 	height:auto;
 	width:100%;
 	margin-left:100%;
-	margin-top:-10%;
+	margin-top:-40px;
 }
 header li li{
 	position:relative;
@@ -120,9 +126,7 @@ header .img-logga{
 
 }
 .Logga{
-	width:50%;
-}
-	
+	height: 100%;
 }
 
 .img-lundakarnevalsbild2{
@@ -144,7 +148,7 @@ header .img-logga{
 .container-2 div{
 	
 	padding:20px;
-	overflow-x:hidden;
+	
 }
 
 .container-2-artist{
@@ -186,6 +190,11 @@ header .img-logga{
 .box-3-ansök{
 	flex:1;
 	text-align:center;
+}
+
+.artister-wrap {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .container-2-box{
@@ -601,6 +610,7 @@ textarea{
 }
 
 
+
 @media only screen and (max-width: 767px)  {
 
 .artistwrapper img{
@@ -616,7 +626,8 @@ textarea{
 }
 
 .artister-wrap {
-	display:inline-block;
+	display: flex;
+	flex-wrap: wrap;
 	align-items:center;
 	justify-content: center;
 }
@@ -730,7 +741,7 @@ display:none;
 	width:100%;
 }
 .nöje1{
-	width:40%;
+	width: 44%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
 	padding:3%;
@@ -738,6 +749,7 @@ display:none;
 	display:inline-block;
 	height:auto;
 	background-color: #FFFBFF;
+
 }
 
 .nöje2{
