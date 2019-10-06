@@ -739,9 +739,11 @@ display:none;
 }
 .nöjenwrapper{
 	width:100%;
+	display:flex;
+	flex-wrap:wrap;
 }
 .nöje1{
-	width: 44%;
+	width: 40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
 	border-radius: 5%;
 	padding:3%;
@@ -749,7 +751,7 @@ display:none;
 	display:inline-block;
 	height:auto;
 	background-color: #FFFBFF;
-
+	margin-top:5%;
 }
 
 .nöje2{
@@ -760,6 +762,7 @@ display:none;
 	text-align:center;
 	display:inline-block;
 	height:auto;
+	margin-top:5%;
 	background-color: #FFFBFF;
 
 }
@@ -814,6 +817,7 @@ display:none;
 	display:inline-block;
 	height:auto;
 	background-color: #FFFBFF;
+	margin-bottom:5%;
 }
 
 
