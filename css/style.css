@@ -773,7 +773,7 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 .container-2-nöje{
 	width:100%;
 }
-.nöjenwrapper{
+.Nöjenwrapper{
 	width:100%;
 	display:flex;
 	flex-wrap:wrap;
@@ -819,6 +819,8 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	height:auto;
 	background-color: #FFFBFF;
 	margin-top:2.5%;
+	margin-left: auto;
+	margin-right:auto;
 }
 
 .nöje4{
