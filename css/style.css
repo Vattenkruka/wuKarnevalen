@@ -8,6 +8,18 @@
 	margin-left:10%;
 }
 
+.tåg-bild{
+	height:200px;
+	width:400px;
+	border-radius:5px;
+	border-style:solid;
+	border-color:rgb(251,91,137);
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+
 .nöjes-bild{
 	width:400px;
 	height:300px;
@@ -551,9 +563,9 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 @media only screen and (max-width: 1024px)  {
 
 	.nöjes-bild{
-	width:200px;
-	height:150px;
-}
+		width:200px;
+		height:150px;
+	}
 
 	p {
 		font-family:arial;
@@ -878,6 +890,8 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	width:70%;
 	padding-left:15%;
 	padding-right:15%;
+	display:flex;
+	flex-wrap: wrap;
 }
 .box-2-blikarnevalist{
 	width:50%;

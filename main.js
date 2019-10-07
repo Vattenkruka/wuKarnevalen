@@ -57,18 +57,18 @@ function commentSubmit(){
 }
 
 function initMap() {
-            var mapOptions = {
-            zoom:16,
-            center: new google.maps.LatLng(55.705, 13.195),
-            mapTypeId: 'roadmap'
-          };
-          var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  var mapOptions = {
+    zoom:16,
+    center: new google.maps.LatLng(55.705, 13.195),
+    mapTypeId: 'roadmap'
+  };
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-          var karnevalsPosition = {lat:55.705606,lng: 13.195730};
-          var marker = new google.maps.Marker({
-            position:karnevalsPosition,
-            map: map,
-            title: 'Lundakarnevalen'
-          });
+  var karnevalsPosition = {lat:55.705606,lng: 13.195730};
+  var marker = new google.maps.Marker({
+    position:karnevalsPosition,
+    map: map,
+    title: 'Lundakarnevalen'
+  });
   
-          }
+}
