@@ -1,21 +1,21 @@
 
 const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
 
 let countDown = new Date('May 16, 2022 00:00:00').getTime(),
-    x = setInterval(function() {
+x = setInterval(function() {
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+  let now = new Date().getTime(),
+  distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      
-    }, second)
+  document.getElementById('days').innerText = Math.floor(distance / (day)),
+  document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+  document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+  document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+}, second)
 
 //  Slide-functions
 
@@ -30,7 +30,7 @@ function showSlides() {
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
@@ -45,23 +45,30 @@ function showSlides2() {
   }
   slideIndex2++;
   if (slideIndex2 > slides.length) {slideIndex2 = 1}
-  slides[slideIndex2-1].style.display = "block";
+    slides[slideIndex2-1].style.display = "block";
   setTimeout(showSlides2, 2000); // Change image every 2 seconds
 }
 
 //Comment Section On FAQ-Page
 
-var comment = [
-{"Name": "Simon Simonsson", "Date": "2019-10-03", "Comment": "Dis is a comment"},
-{"Name": "Greger Simonsson", "Date": "2019-10-03", "Comment": "Dis is a comment2"},
-{"Name": "Greger Simonsson", "Date": "2019-10-03", "Comment": "Dis is a comment3"}	
-
-];
-
-for(var i=0;i<comment.length;i++){
-	var html ="<div class="
-}
 
 function commentSubmit(){
 	document.getElementById("commentForm").submit();
 }
+
+function initMap() {
+            var mapOptions = {
+            zoom:16,
+            center: new google.maps.LatLng(55.705, 13.195),
+            mapTypeId: 'roadmap'
+          };
+          var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+          var karnevalsPosition = {lat:55.705606,lng: 13.195730};
+          var marker = new google.maps.Marker({
+            position:karnevalsPosition,
+            map: map,
+            title: 'Lundakarnevalen'
+          });
+  
+          }
