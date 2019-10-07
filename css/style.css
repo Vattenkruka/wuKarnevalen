@@ -550,6 +550,11 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 
 @media only screen and (max-width: 1024px)  {
 
+	.nöjes-bild{
+	width:200px;
+	height:150px;
+}
+
 	p {
 		font-family:arial;
 	}
