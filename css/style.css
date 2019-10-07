@@ -586,6 +586,8 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	.nöjes-bild{
 		width:200px;
 		height:150px;
+		margin-left: auto;
+		margin-right:auto;
 	}
 
 	p {
@@ -811,6 +813,8 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	display:flex;
 	flex-wrap:wrap;
 }
+
+
 .nöje1{
 	width: 40%;
 	box-shadow: 0 5px 10px rgba(154,160,185,.05),0 15px 40px rgba(166,173,201,.2);
@@ -821,6 +825,8 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	height:auto;
 	background-color: #FFFBFF;
 	margin-top:5%;
+	margin-right: auto;
+    margin-left: auto;
 }
 
 .nöje2{
@@ -833,14 +839,20 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	height:auto;
 	margin-top:5%;
 	background-color: #FFFBFF;
+	margin-right: auto;
+    margin-left: auto;
 
 }
 
 .box-3-nöje{
 	width:100%;
-	display:flex;
 	background-color:pink;
 	text-align:center;
+}
+
+.box-3-nöje h1{
+	
+
 }
 .nöje3{
 	width:40%;

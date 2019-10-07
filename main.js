@@ -62,9 +62,10 @@ function initMap() {
     center:{
       lat: 55.7055283,
       lng:13.1925465
-    }
     
-  });
+    }
+    });
+  
 
   var flightPlanCoordinates = [{
           lat: 55.703609,
