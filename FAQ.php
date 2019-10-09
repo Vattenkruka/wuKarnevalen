@@ -91,6 +91,22 @@
 							</article>			
 						</div>
 					</aside>
+
+					<?php
+					define ('DB_USER','4003497-db10');
+					define('DB_PASSWORD','REWvoJs6');
+					define('DB_HOST','my06s.sqlserver.se');
+					define('DB_NAME','4003497-db10');
+
+
+					$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+					OR die ('No DB-connection via MySQLi');
+
+					echo "<h2>Diskussionsforum</h2>";
+
+					$db_conn->close();
+
+					?>
 					<div class="commentHeader">
 						<h2> Comment Section </h2>
 					</div>
@@ -173,7 +189,7 @@
 						<div class="commentInfo">
 							<h3> Submit A Comment</h3>
 							<p> Enter the fields below <br> to submit a comment!</p>
-							<form  method="POST" id="commentForm">
+							<form  action="action-faq.php" method="POST" id="commentForm">
 								<div>
 									<label>Name: *</label>
 									<input type="text" name="name"
@@ -187,6 +203,7 @@
 								</div>
 								<br>
 								<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"> Post!</button>
+							</form>
 							</div>
 						</div>
 					</main>
