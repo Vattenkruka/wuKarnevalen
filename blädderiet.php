@@ -10,9 +10,9 @@
 <body>
 	<header id="main-header">
 		<div class="container">
-			<a href="index.html">
+			<a href="index.php">
 				<h1> LundaKarnevalen </h1>
-				<a href="index.html">
+				<a href="index.php">
 					<div class="img-logga">  
 						<img class="Logga" src="images/LundaKarnevalen2022Logga.png" alt="logotyp">
 					</div>
@@ -22,17 +22,17 @@
 						<li><a> Bli Karnevalist ▼</a> 
 							<ul>
 								
-								<li><a href="bliKarnevalist.html">Bli Karnevalist! </a></li>
+								<li><a href="bliKarnevalist.php">Bli Karnevalist! </a></li>
 								
-								<li><a href="ansök.html"> Ansök</a></li>
+								<li><a href="ansök.php"> Ansök</a></li>
 
 								<li><a> Sektioner </a>
 									<ul>
-										<li><a href="sektioner.html"> Alla sektioner</a></li>
-										<li><a href="administerIT.html"> AdministerIT</a></li>
-										<li><a href="biljonsen.html"> Biljonsen</a></li>
-										<li><a href="blädderiet.html"> Blädderiet</a></li>
-										<li><a href="dansen.html"> Dansen</a></li>
+										<li><a href="sektioner.php"> Alla sektioner</a></li>
+										<li><a href="administerIT.php"> AdministerIT</a></li>
+										<li><a href="biljonsen.php"> Biljonsen</a></li>
+										<li><a href="blädderiet.php"> Blädderiet</a></li>
+										<li><a href="dansen.php"> Dansen</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -40,16 +40,16 @@
 						<li><a> Om Karnevalen ▼</a>
 							<ul>
 								
-								<li><a href="omKarnevalen.html">Om Karnevalen</a></li>
-								<li><a href="nöjen.html"> Nöjen</a></li>
-								<li><a href="artister.html"> Artister</a></li>
-								<li><a href="tåget.html"> Tåget</a></li>
-								<li><a href="faq.html" > FAQ</a></li>
-								<li><a href="hittaHit.html"> Hitta hit</a></li>
+								<li><a href="omKarnevalen.php">Om Karnevalen</a></li>
+								<li><a href="nöjen.php"> Nöjen</a></li>
+								<li><a href="artister.php"> Artister</a></li>
+								<li><a href="tåget.php"> Tåget</a></li>
+								<li><a href="faq.php" > FAQ</a></li>
+								<li><a href="hittaHit.php"> Hitta hit</a></li>
 							</ul>
 						</li>
-						<li><a href="reserveraBiljetter.html"> Reservera Biljetter</a></li>
-						<li><a href="gästbok.html"> Gästbok</a></li>
+						<li><a href="reserveraBiljetter.php"> Reservera Biljetter</a></li>
+						<li><a href="gästbok.php"> Gästbok</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -57,11 +57,13 @@
 				<div class="gap-40"></div>
 
 				<div class="container-2">
-					<div class="box-2-blikarnevalist"> <!--Main-->
-						<h3> Livet som Karnevalist! </h3>
+					<div class="box-2-blädderiet"> <!--Main-->
+						<h3> Blädderiet </h3>
 						<p>Aliquam lectus odio, dapibus et efficitur vel, facilisis at est. Maecenas pulvinar convallis pulvinar. Curabitur dictum lobortis ante vitae placerat. Nam turpis sapien, convallis sit amet tincidunt non, aliquam id orci. In lorem est, pharetra quis ipsum ut, condimentum rhoncus magna. Praesent eu tempor erat. Nullam dui nulla, condimentum vitae laoreet id, elementum quis velit. Cras ac magna vitae metus maximus lobortis. Sed eget vestibulum dolor. Fusce et enim et purus dapibus imperdiet ut quis elit. Suspendisse convallis massa nibh, vitae dictum arcu rhoncus non. Pellentesque sodales nulla sed urna interdum, a tincidunt nisl feugiat. Donec sodales auctor justo, ac blandit felis imperdiet et.</p>
 						<p>
 						Praesent interdum urna eget tincidunt interdum. Vivamus suscipit a turpis id rutrum. Quisque tincidunt at tellus sed dictum. Quisque eget vulputate justo. Maecenas eget malesuada ipsum, in commodo ligula. Duis sit amet semper ante. Aenean sed imperdiet orci, nec auctor nunc. Phasellus molestie et metus congue venenatis. Pellentesque aliquet porttitor libero, ac vulputate lacus pretium et. Nunc ultrices enim eget lacus vestibulum condimentum. Maecenas tortor ante, commodo quis tempus et, porttitor id massa. Pellentesque eu auctor libero. Quisque eleifend est ligula, a semper tellus condimentum quis. Vivamus venenatis enim diam, sit amet posuere tortor varius non. Fusce euismod egestas sapien a tempus.</p>
+						<p> Mauris dapibus ante sit amet nibh rutrum elementum eget in velit. Nunc eget ullamcorper enim, vel sagittis elit. Maecenas sit amet nisl non quam lobortis finibus. Duis bibendum diam id varius commodo. Etiam in laoreet enim. Praesent pharetra lorem nec metus sagittis venenatis. Quisque consectetur tellus in ullamcorper consequat. Nam tincidunt aliquam nibh, a bibendum nisi interdum ac. Nunc non erat in urna pellentesque fermentum. Donec dui lacus, tempor quis odio at, cursus varius mauris. Nunc ultrices hendrerit quam, pharetra eleifend tortor. Pellentesque luctus convallis posuere. Sed suscipit leo sapien, eget aliquet massa feugiat et. Pellentesque eleifend imperdiet malesuada. Nam aliquet dictum eros, vel consequat dolor bibendum at.
+						</p>
 					</div>
 				</main>
 
