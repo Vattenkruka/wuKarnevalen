@@ -58,7 +58,7 @@
 
 				<div class="container-2-nöje">
 					<aside class="box-3-nöje"> <!--News-->	
-							<h1> Frequently Asked Questions</h1>
+						<h1> Frequently Asked Questions</h1>
 						<div class="Nöjenwrapper">
 							<article class="nöje1">
 								<h2> Fråga 1? </h2>
@@ -92,119 +92,97 @@
 						</div>
 					</aside>
 
-					<?php
-					define ('DB_USER','4003497_zw91539');
-					define('DB_PASSWORD','REWvoJs6');
-					define('DB_HOST','my06s.sqlserver.se');
-					define('DB_NAME','4003497-db10');
-
-
-					$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
-					OR die ('No DB-connection via MySQLi');
-
 					
-
-
-					$db_conn->close();
-
-					?>
 					<div class="commentHeader">
 						<h2> Comment Section </h2>
 					</div>
 					<div class="commentsection">
 						<div class="commentSide">
 							<h3>Comments </h3>
-							<div class="comment-wrapper">
-								<div class="comments-list">
+							<?php
+							define ('DB_USER','4003497_zw91539');
+							define('DB_PASSWORD','REWvoJs6');
+							define('DB_HOST','my06s.sqlserver.se');
+							define('DB_NAME','4003497-db10');
 
-									<ul class ="comments-holder-ul">
 
-										<li class="comment-holder" id="_1"> 
+							$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+							OR die ('No DB-connection via MySQLi');
 
-											<div class="comment-body">
-												<h3 class="name-field">
-													Stenkil Dahlquist
-												</h3>
+							$sql = "SELECT * FROM commentTable";
 
-												<div class="comment-text">
-													Snygg hemsida! Hur får man tag på karnevalsbiljetter?
+
+							if ($result=mysqli_query($db_conn,$sql))
+							{
+								echo "<table style='border:1px solid #ccc; border-collapse: collapse;'><tr><td style='border:1px solid #ccc'><b>Name:</b></td><td style='border:1px solid #ccc'><b>Comment:</b></td></tr>";
+									// Fetch one and one row
+									while ($row=mysqli_fetch_row($result))
+									{
+										printf ("<tr> <td style='border:1px solid #ccc'> %s </td> <td style='border:1px solid #ccc'> %s </td> <tr />\n",$row[0],$row[1]);
+										}
+
+									echo "</table>";
+									// Free result set
+									mysqli_free_result($result);
+								}
+
+
+
+								$db_conn->close();
+
+								?>
+
+								<div class="comment-wrapper">
+									<div class="comments-list">
+
+										<ul class ="comments-holder-ul">
+
+											<li class="comment-holder" id="_1"> 
+
+												<div class="comment-body">
+													<h3 class="name-field">
+														Stenkil Dahlquist
+													</h3>
+
+													<div class="comment-text">
+														Snygg hemsida! Hur får man tag på karnevalsbiljetter?
+													</div>
 												</div>
-											</div>
-										</li>
-										<li class="comment-holder" id="_1"> 
-											<div class="comment-body">
-												<h3 class="name-field">
-													Greger Arnshed
-												</h3>
-												<div class="comment-text">
-													Hej! Vilka är artisterna för i år?
+											</li>
+											<li class="comment-holder" id="_1"> 
+												<div class="comment-body">
+													<h3 class="name-field">
+														Greger Arnshed
+													</h3>
+													<div class="comment-text">
+														Hej! Vilka är artisterna för i år?
+													</div>
 												</div>
-											</div>
-										</li>
-										<li class="comment-holder" id="_1"> 
-											<div class="comment-body">
-												<h3 class="name-field">
-													Arnold "The Terminator" Schwarzenegger
-												</h3>
-												<div class="comment-text">
-													I'll be back!
-												</div>
-											</div>
-										</li>
-										<li class="comment-holder" id="_1"> 
-											<div class="comment-body">
-												<h3 class="name-field">
-													Elon Musk
-												</h3>
-												<div class="comment-text">
-													Vilken futuristisk och bra hemsida!
-												</div>
-											</div>
-										</li>
-										<li class="comment-holder" id="_1"> 
-											<div class="comment-body">
-												<h3 class="name-field">
-													Bill Gates
-												</h3>
-												<div class="comment-text">
-													Remember that your most unhappy customers are your greatest source of learning.
-													Success is a lousy teacher. It seduces smart people into thinking they can't lose.
-													Life is not fair; get used to it.
-												</div>
-											</div>
-										</li>
-										<li class="comment-holder" id="_1"> 
-											<div class="comment-body">
-												<h3 class="name-field">
-													Johan Glans
-												</h3>
-												<div class="comment-text">
-													A Sql-statement walks into a bar and sees two tables, it approaches and asks: "May I join you?"
-												</div>
-											</div>
-										</li>
-									</ul>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="commentInfo">
-							<h3> Submit A Comment</h3>
-							<p> Enter the fields below <br> to submit a comment!</p>
-							<form  action="action-faq.php" method="POST" id="commentForm">
-								<div>
-									<label>Name: *</label>
-									<input type="text" name="name"
-									placeholder="Enter Your Name!" required>
-								</div>
-								<br>
-								<div>
-									<label>Comment: *</label>
-									<textarea name="comment" form="commentForm" id="commentTextArea"
-									placeholder="Enter Your Comment!" required></textarea>
-								</div>
-								<br>
-								<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"> Post!</button>
-							</form>
+							<div class="commentInfo">
+								<h3> Submit A Comment</h3>
+								<p> Enter the fields below <br> to submit a comment!</p>
+
+								<form  action="action-faq.php" method="POST" id="commentForm">
+									<div>
+										<label>Name: *</label>
+										<input type="text" name="name"
+										placeholder="Enter Your Name!" required>
+									</div>
+									<br>
+									<div>
+										<label>Comment: *</label>
+										<textarea name="comment" form="commentForm" id="commentTextArea"
+										placeholder="Enter Your Comment!" required></textarea>
+									</div>
+									<br>
+									<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+									> Post!</button>
+								</form>
 							</div>
 						</div>
 					</main>
