@@ -11,3 +11,11 @@
 	<header>
 		<?php include 'header.php';?>
 		</header>
+		<main>
+		</main>
+				<footer>
+					<?php include 'footer.php';?>
+				</footer>
+			</body>
+			<script src="main.js"></script>
+			</html>

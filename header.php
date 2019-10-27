@@ -41,7 +41,8 @@
 							</ul>
 						</li>
 						<li><a href="reserveraBiljetter.php"> Reservera Biljetter</a></li>
-						<li><a href="gästbok.php"> Gästbok</a></li>
+						<li><a href="adminInlogg.php"> Admin Login</a></li>
 					</ul>
 				</nav>
+			</header>
 			
