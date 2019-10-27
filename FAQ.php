@@ -101,60 +101,18 @@
 							<h3>Comments </h3>
 							<?php
 							require('dbConnection.php');
+							$resultTable = mysqli_query($db_conn, "SELECT name, comment FROM commentTable");
+							while ($array = mysqli_fetch_array($resultTable)) {
 
-							$sql = "SELECT * FROM commentTable";
+							echo "<div class='comment-body'> <h3> ". $array[0] . "</h3><p>" . $array[1] . "</p></div>";
 
-
-							if ($result=mysqli_query($db_conn,$sql))
-							{
-								echo "<table style='border:1px solid #ccc; border-collapse: collapse;'><tr><td style='border:1px solid #ccc'><b>Name:</b></td><td style='border:1px solid #ccc'><b>Comment:</b></td></tr>";
-									// Fetch one and one row
-									while ($row=mysqli_fetch_row($result))
-									{
-										printf ("<tr> <td  style='border:1px solid #ccc'> %s </td> <td style='border:1px solid #ccc'> %s </td> <tr />\n",$row[0],$row[1]);
-										}
-
-									echo "</table>";
-									// Free result set
-									mysqli_free_result($result);
-								}
-
-
+						}
 
 								$db_conn->close();
 
 								?>
 
-								<div class="comment-wrapper">
-									<div class="comments-list">
-
-										<ul class ="comments-holder-ul">
-
-											<li class="comment-holder" id="_1"> 
-
-												<div class="comment-body">
-													<h3 class="name-field">
-														Stenkil Dahlquist
-													</h3>
-
-													<div class="comment-text">
-														Snygg hemsida! Hur får man tag på karnevalsbiljetter?
-													</div>
-												</div>
-											</li>
-											<li class="comment-holder" id="_1"> 
-												<div class="comment-body">
-													<h3 class="name-field">
-														Greger Arnshed
-													</h3>
-													<div class="comment-text">
-														Hej! Vilka är artisterna för i år?
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
+								
 							</div>
 							<div class="commentInfo">
 								<h3> Submit A Comment</h3>

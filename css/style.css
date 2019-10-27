@@ -8,6 +8,43 @@
 	margin-left:10%;
 }
 
+
+.comment-body{
+	background:#fffff5;
+	height:auto;
+	width:auto;
+	margin:5px 5px 5px 5px;
+	border: 1px solid #e1e1e1;
+	border-radius:8px;
+	overflow:hidden;
+	text-align:left;
+}
+
+.comment-body:hover
+{
+	
+	background: #FFFFD8;
+}
+
+.comment-body h3{
+	color:#2E5CB8;
+	margin-left: 10px;
+	margin-right: 10px;
+	width:auto;
+	height:auto;
+}
+
+.comment-body p{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width:auto;
+	max-height:100%;
+	display:block;
+	font-size:14px;
+	word-wrap:normal;
+}
+
 .tåg-bild{
 	height:200px;
 	width:400px;

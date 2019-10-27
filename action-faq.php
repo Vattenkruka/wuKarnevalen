@@ -4,10 +4,7 @@
 
 
 <?php
-define ('DB_USER','4003497_zw91539');
-define('DB_PASSWORD','REWvoJs6');
-define('DB_HOST','my06s.sqlserver.se');
-define('DB_NAME','4003497-db10');
+require('dbConnection.php');
 $NAME = $_POST["name"];
 $COMMENT =
 $_POST["comment"];
@@ -19,15 +16,26 @@ OR die ('No DB-connection via MySQLi');
 echo "<h2>Diskussionsforum</h2>";
 
 /*
-$sql = "CREATE TABLE commentTable (name varchar(255), comment varchar(1000))";
+$sql = "DROP TABLE commentTable";
+if ($db_conn->query($sql) === TRUE) {
+    echo "Table has been dropped!";
+} else {
+    echo "Fel: " . $sql . "<br>" . $db_conn->error;
+}
+
+*/
+
+/*
+
+$sql = "CREATE TABLE commentTable (commentID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, name varchar(255), comment varchar(1000))";
 
 if ($db_conn->query($sql) === TRUE) {
 	echo "New table created successfully";
 } else {
 	echo "Fel: " . $sql . "<br>" . $db_conn->error;
 }
-*/
 
+*/
 
 
 if (!empty($NAME)) {

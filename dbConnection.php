@@ -3,9 +3,7 @@ define ('DB_USER','4003497_zw91539');
 define('DB_PASSWORD','REWvoJs6');
 define('DB_HOST','my06s.sqlserver.se');
 define('DB_NAME','4003497-db10');
-$NAME = $_POST["name"];
-$COMMENT =
-$_POST["comment"];
+
 
 
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
