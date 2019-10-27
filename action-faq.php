@@ -28,7 +28,7 @@ if ($db_conn->query($sql) === TRUE) {
 }
 */
 
-/*
+
 
 if (!empty($NAME)) {
 	$sql = "INSERT INTO commentTable (name,comment)
@@ -42,9 +42,10 @@ if (!empty($NAME)) {
 	}
 }
 
-*/
 
 
+
+/*
 $sql = "DELETE FROM commentTable WHERE name = 'Svante'";
 
 if ($db_conn->query($sql) === TRUE) {
@@ -72,7 +73,7 @@ if ($result=mysqli_query($db_conn,$sql))
   mysqli_free_result($result);
 }
 
-
+*/
 
 $db_conn->close();
 
