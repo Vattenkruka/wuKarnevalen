@@ -57,15 +57,17 @@
 
 .tågInfo-wrapper h2{
 	font:Benguiat-BoldCondensed, Arial, Helvetica;
-	color:rgb(251,91,137);
 	flex:1;
 }
 .tågInfo-wrapper{
 	display:flex;
 	list-style: none;
 	flex:1;
-	margin-left:10%;
-	margin-top: 4%;
+	margin-left:5%;
+	margin-top: 2%;
+	background-color:white;
+	width:auto;
+	height:auto;
 }
 
 .tåget{
@@ -74,10 +76,18 @@
 
 .tågInfo-wrapper ul{
 	list-style-type: none;
+	flex-direction: column;
 }
-
+.tågInfo-wrapper ul h3{
+color:black;
 }
-
+.tågInfo-wrapper ul li{
+	background-color:white;
+	text-decoration: none;
+}
+.tågInfo-wrapper ul li:hover{
+	display:none;
+}
 .nöjes-bild{
 	width:400px;
 	height:300px;
@@ -973,8 +983,8 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 
 .färdväg-wrapper{
 	flex:1;
-	width:;
-	height:;
+	width:auto;
+	height:auto;
 	margin-bottom: 5%;
 	margin-right:2%;
 }
