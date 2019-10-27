@@ -100,14 +100,7 @@
 						<div class="commentSide">
 							<h3>Comments </h3>
 							<?php
-							define ('DB_USER','4003497_zw91539');
-							define('DB_PASSWORD','REWvoJs6');
-							define('DB_HOST','my06s.sqlserver.se');
-							define('DB_NAME','4003497-db10');
-
-
-							$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
-							OR die ('No DB-connection via MySQLi');
+							require('dbConnection.php');
 
 							$sql = "SELECT * FROM commentTable";
 
@@ -118,7 +111,7 @@
 									// Fetch one and one row
 									while ($row=mysqli_fetch_row($result))
 									{
-										printf ("<tr> <td style='border:1px solid #ccc'> %s </td> <td style='border:1px solid #ccc'> %s </td> <tr />\n",$row[0],$row[1]);
+										printf ("<tr> <td  style='border:1px solid #ccc'> %s </td> <td style='border:1px solid #ccc'> %s </td> <tr />\n",$row[0],$row[1]);
 										}
 
 									echo "</table>";
