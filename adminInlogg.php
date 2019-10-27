@@ -9,10 +9,33 @@
 </head>
 <body>
 	<header>
-	<?php include 'header.php';?>
+		<?php include 'header.php';?>
 	</header>
 
-	<footer>
+	<main>
+		<div class="Main_login_container">
+			<div class="login_h1">
+				<h1>AdminPortalen För Karnevalen</h1>
+			</div>
+			<form action="action_login.php" method="post">
+				<div class="login-container">
+					<div class="userbox">
+					<label for="username"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="username" required>
+					</div>
+					<div class="passwordbox">
+					<label for="password"><b>Password</b></label>
+					<input type="text" placeholder="Enter Password" name="password"
+					required>
+					</div>
+					<div class="loginbox">
+					<button type="submit" name="loginBtn">Login</button>
+				</div>
+				</form>
+				</div>
+			</div>
+		</main>
+		<footer>
 			<?php include 'footer.php';?>
 		</footer>
 	</body>

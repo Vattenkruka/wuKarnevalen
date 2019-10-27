@@ -8,6 +8,44 @@
 	margin-left:10%;
 }
 
+.Main_login_container{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+
+}
+
+.login_h1{
+	font:Benguiat-BoldCondensed, Arial, Helvetica;
+	text-align:center;
+	font-size:30px;
+	color:rgb(251,91,137);
+}
+
+.login-container{
+	flex-direction: column;
+	margin-top:10%;
+	border-color:251,91,137;
+	border-radius:3px;
+}
+
+.loginBtn{
+
+}
+
+.userbox{
+	margin-bottom:3%;
+}
+
+.passwordbox{
+	margin-bottom:3%;
+}
+
+.loginbox{
+	margin-bottom:10%;
+}
 
 .comment-body{
 	background:#fffff5;

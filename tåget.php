@@ -53,7 +53,7 @@
 				</main>
 				<footer>
 				<?php include 'footer.php';?>
-								</footer>
+				</footer>
 							</body>
 							<script src="main.js"></script>
 
