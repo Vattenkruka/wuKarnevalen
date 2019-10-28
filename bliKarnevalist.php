@@ -6,6 +6,7 @@
 	<title>LundaKarnevalen 2022</title>
 	<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src='main.js'> </script>
 </head>
 <body>
 	<header>
@@ -26,5 +27,4 @@
 		<footer>
 			<?php include 'footer.php';?>
 		</body>
-		<script src="main.js"></script>
 		</html>

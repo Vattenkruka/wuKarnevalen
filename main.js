@@ -1,4 +1,6 @@
 
+function showCountdown(){
+
 const second = 1000,
 minute = second * 60,
 hour = minute * 60,
@@ -17,6 +19,7 @@ x = setInterval(function() {
 
 }, second)
 
+}
 //  Slide-functions
 
 var slideIndex = 0;

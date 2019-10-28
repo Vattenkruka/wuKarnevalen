@@ -40,6 +40,6 @@
 					</div>
 				</footer>
 			</body>
-			<script src="main.js"></script>
+			<script> showCountdown();</script>
 
 			</html>
