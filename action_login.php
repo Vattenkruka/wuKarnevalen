@@ -9,36 +9,76 @@
 	<script type="text/javascript" src='main.js'> </script>
 </head>
 <header>
-		<?php include 'header.php';?>
-	</header>
+	<?php include 'header.php';?>
+</header>
 <body>
 
-<?php
-require('dbConnection.php');
-$USERNAME = $_POST["username"];
-$PASSWORD =
-$_POST["password"];
+	<?php
+	require('dbConnection.php');
+	$USERNAME = $_POST["username"];
+	$PASSWORD =
+	$_POST["password"];
 
-$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
-OR die ('No DB-connection via MySQLi');
+	$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+	OR die ('No DB-connection via MySQLi');
 
-$db_conn->close();
-?>
+	$db_conn->close();
+	?>
 
-<div class="portalh1"> 
-<h1> Karnevalsportalen För Administratörer </h1>
-</div>
-<div class="admin_crud_wrapper">
-<div class="link_list_wrapper">
-</div>
-<div class="admin_cdu_wrapper">
-</div>
-<div class="admin_read_wrapper">
-</div>
-</div>
+	<div class="portalh1"> 
+		<h1> Karnevalsportalen För Administratörer </h1>
+	</div>
+	<div class="admin_crud_wrapper">
+		<div class="link_list_wrapper">
+			<div class="linkh2">
+				<h2>Adminfunktioner </h2>
+			</div>
+			<ol>
+				<li id="hantering_av_admin">
+				Hantering av Admin</li>
+				<li> <a href="#Nyhetshantering">Nyhetshantering</a></li>
+				<li> <a href="#Reservationshantering">Reservationshantering</a></li>
+				<li> <a href="#Kommentarshantering">Kommentarshantering</a></li>
+				<li> <a href="#Ansökanhantering">Ansökanhantering</a></li>
+		</div>
+		<div class="admin_cdu_wrapper">
+		<div class="linkh2">
+			<h2>Adminverktyg gällande Admins</h2>
+		</div>
+		<div  class="adminverktygform">
+		<form>
+		<div class="adminID_field">
+		<label>adminID:*</label>
+		<input type="text" name="adminID"
+						placeholder="Enter adminID" pattern= "[0-9]"  required>
 
-		<footer>
-			<?php include 'footer.php';?>
-		</footer>
-	</body>
-	</html>
+		</div>
+		<div class="username_field">
+		<label>Username:</label>
+		<input type="text" name="adminID"
+						placeholder="Enter username">
+		
+		</div>
+		<div class="password_field">
+		<label>Password:</label>
+		<input type="text" name="adminID"
+						placeholder="Enter password">
+		</div>
+		<button input type="button" name="createAdminbtn" id="createAdminbtn" onclick="commentSubmit()" value="Submit"
+						> Skapa Admin</button>
+		<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+						> Uppdatera Admin</button>
+		<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+						> Ta bort Admin</button>
+		</form>
+		</div>
+		</div>
+		<div class="admin_read_wrapper">
+		</div>
+	</div>
+
+	<footer>
+		<?php include 'footer.php';?>
+	</footer>
+</body>
+</html>

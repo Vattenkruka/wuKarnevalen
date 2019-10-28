@@ -8,6 +8,31 @@
 	margin-left:10%;
 }
 
+.portalh1 {
+	font:Benguiat-BoldCondensed, Arial, Helvetica;
+	text-align:center;
+	font-size:30px;
+	color:rgb(251,91,137);
+	margin-bottom:5%;
+}
+
+.admin_crud_wrapper{
+	display:flex;
+}
+
+.link_list_wrapper{
+	flex:1;
+	margin-left:1%;
+}
+
+.admin_cdu_wrapper{
+	flex:1;
+}
+
+.admin_read_wrapper{
+	flex:1;
+}
+
 .Main_login_container{
 	text-align:center;
 	margin-left:auto;
