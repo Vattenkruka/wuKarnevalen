@@ -12,6 +12,56 @@
 		<?php include 'header.php';?>
 		</header>
 		<main>
+			<div class= container-biljett>
+			<div class="reserveTicket">
+					<h3> Reservera Biljett</h3>
+					
+
+					<form  action="action_ticket.php" method="POST" id="ticketForm">
+						<div>
+							<label>Email: *</label>
+							<input type="text" name="name"
+							placeholder="Enter Your Email!" required>
+						</div>
+						<br>
+						<div>
+						<label>Önskad Biljett *</label>
+						<select name="section">
+							<option value="administerIT">Spexet</option>
+							<option value="biljonsen">Cirkusen</option>
+							<option value="blädderiet">Revyn</option>
+						</select>
+					</div>						
+					<br>
+						<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+						> Reservera Biljett</button>
+					</form>
+				</div>
+				<div class= biljett_info>
+					<article class ="nöje3">
+						<h2> Cirkusen </h2>
+						<div class="nöjes-bild">  
+							<img class="barnevalenBild" src="images/cirkus.jpg" alt="Cirkus">
+						</div>
+						<p> Nulla consectetur, nunc eu sodales congue, risus risus dignissim nulla, quis venenatis augue nisi molestie elit. Sed venenatis porttitor ultricies. Nunc ante arcu, efficitur eu scelerisque maximus, aliquam at magna. Maecenas sit amet lorem ac odio eleifend iaculis nec ac purus. Duis vel nulla fringilla, convallis purus quis, condimentum nisl.</p>
+					</article>
+					<article class="nöje3">
+						<h2> Revyn </h2>
+						<div class="nöjes-bild">  
+							<img class="barnevalenBild" src="images/revy.jpg" alt="Revyn">
+						</div>
+						<p>Nulla consectetur, nunc eu sodales congue, risus risus dignissim nulla, quis venenatis augue nisi molestie elit. Sed venenatis porttitor ultricies. Nunc ante arcu, efficitur eu scelerisque maximus, aliquam at magna. Maecenas sit amet lorem ac odio eleifend iaculis nec ac purus. Duis vel nulla fringilla, convallis purus quis, condimentum nisl.
+							Nulla consectetur, nunc eu sodales congue, risus risus dignissim nulla, quis venenatis augue nisi molestie elit. Sed venenatis porttitor ultricies. Nunc ante arcu, efficitur eu scelerisque maximus, aliquam at magna. Maecenas sit amet lorem ac odio eleifend iaculis nec ac purus. Duis vel nulla fringilla, convallis purus quis, condimentum nisl.
+						</p>
+					</article>
+					<article class="nöje3">
+						<h2> Spexet </h2>
+						<div class="nöjes-bild">  
+							<img class="barnevalenBild" src="images/spexet.jpg" alt="Spexet">
+						</div>
+						<p>Nulla consectetur, nunc eu sodales congue, risus risus dignissim nulla, quis venenatis augue nisi molestie elit. Sed venenatis porttitor ultricies. Nunc ante arcu, efficitur eu scelerisque maximus, aliquam at magna. Maecenas sit amet lorem ac odio eleifend iaculis nec ac purus. Duis vel nulla fringilla, convallis purus quis, condimentum nisl.
+						</p>
+					</article>
 		</main>
 				<footer>
 					<?php include 'footer.php';?>

@@ -1109,6 +1109,11 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 	height:150px; 
 	width:200px;
 }
+.reserveticket{
+	width:50%;
+	height:100%;
+	text-align:center;
+}
 }
 }
 }
