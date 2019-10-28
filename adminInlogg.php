@@ -12,7 +12,6 @@
 	<header>
 		<?php include 'header.php';?>
 	</header>
-
 	<main>
 		<div class="Main_login_container">
 			<div class="login_h1">
