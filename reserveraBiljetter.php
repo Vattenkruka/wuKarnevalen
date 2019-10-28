@@ -13,7 +13,7 @@
 		<?php include 'header.php';?>
 		</header>
 		<main>
-			<div class= container-biljett>
+			<div class= "container-biljett">
 			<div class="reserveTicket">
 					<h3> Reservera Biljett</h3>
 					
@@ -63,6 +63,7 @@
 						<p>Nulla consectetur, nunc eu sodales congue, risus risus dignissim nulla, quis venenatis augue nisi molestie elit. Sed venenatis porttitor ultricies. Nunc ante arcu, efficitur eu scelerisque maximus, aliquam at magna. Maecenas sit amet lorem ac odio eleifend iaculis nec ac purus. Duis vel nulla fringilla, convallis purus quis, condimentum nisl.
 						</p>
 					</article>
+				</div>
 		</main>
 				<footer>
 					<?php include 'footer.php';?>
