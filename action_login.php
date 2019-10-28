@@ -19,18 +19,24 @@ $USERNAME = $_POST["username"];
 $PASSWORD =
 $_POST["password"];
 
-
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
-include('querys.php');
-functionName();
-
-
-
 $db_conn->close();
-
 ?>
+
+<div class="portalh1"> 
+<h1> Karnevalsportalen För Administratörer </h1>
+</div>
+<div class="admin_crud_wrapper">
+<div class="link_list_wrapper">
+</div>
+<div class="admin_cdu_wrapper">
+</div>
+<div class="admin_read_wrapper">
+</div>
+</div>
+
 		<footer>
 			<?php include 'footer.php';?>
 		</footer>
