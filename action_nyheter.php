@@ -8,7 +8,7 @@ $_POST["nmessage"];
 $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
-if (!empty($NAME)) {
+if (!empty($HEADLINE)) {
 	$sql = "INSERT INTO newsTable (headline,nmessage)
 	VALUES ('$HEADLINE','$NMESSAGE')";
 
