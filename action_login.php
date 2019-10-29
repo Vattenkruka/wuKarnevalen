@@ -44,7 +44,7 @@
 					<h2>Adminverktyg gällande Admins</h2>
 				</div>
 				<div  class="adminverktygform">
-					<form action="#" method="POST" id="adminForm">
+					<form action="action_admin" method="POST" id="adminForm">
 						<div class="adminID_field">
 							<label>adminID:*</label>
 							<input type="text" name="adminID"
@@ -82,7 +82,7 @@
 			<h2> Adminsök</h2>
 			</div>
 			<div class="adminform_wrapper">
-			<form action="#" method="post">
+			<form action="action_adminSearch" method="post">
 			<div class="adminID_field">
 							<label>adminID:</label>
 							<input type="text" name="adminID"
@@ -91,18 +91,18 @@
 						</div>
 						<div class="username_field">
 							<label>Username:</label>
-							<input type="text" name="adminID"
+							<input type="text" name="username"
 							placeholder="Enter username">
 
 						</div>
 						<div class="password_field">
 							<label>Password:</label>
-							<input type="text" name="adminID"
+							<input type="text" name="password"
 							placeholder="Enter password">
 						</div>
-						<button input type="button" name="createAdminbtn" id="createAdminbtn" onclick="commentSubmit()" value="Submit"
+						<button input type="button" name="searchAdminBtn" id="searchAdminBtn" onclick="searchAdminSubmit()" value="Submit"
 						> Sök Admin!</button>
-						<button input type="button" id="sökAllaAdminsBtn" value="submit"> Sök Alla Admins</button>
+						<button input type="button" name= "searchAllAdminBtn" id="searchAllAdminBtn" onclick="searchAdminSubmit()" value="submit"> Sök Alla Admins</button>
 					</form>
 					<div class="adminViewTable">
 					
