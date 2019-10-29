@@ -63,8 +63,8 @@ function reservationSubmit(){
   document.getElementById("ticketForm").submit();
 }
 
-function ansökSubmit(){
-  document.getElementById("my-form").submit();
+function applicationSubmit(){
+  document.getElementById("applicationForm").submit();
 }
 
 function initMap() {

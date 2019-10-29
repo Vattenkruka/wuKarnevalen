@@ -19,7 +19,7 @@
 			<div class="box-2-ansök"> <!--Main, FORMS-->
 				<h3> Ansök till Lundakarnevalen! </h3>
 				<div id="error"></div>
-				<form name="RegForm" action="/process.php" onsubmit="return validateForm()" method="POST" id="my-form">
+				<form name="RegForm" action="action_application.php" onsubmit="return validateForm()" method="POST" id="applicationForm">
 					<div>
 						<label>Förnamn *</label>
 						<input type="text" name="förnamn"
@@ -55,7 +55,7 @@
 					</div>
 					<br>
 					<div class="submitbtn">
-						<input type="submit" name="submit" value="Submit": width:100px; >
+						<input type="button" name="applicationBtn" id="applicationBtnId" onclick="applicationSubmit()" value="Submit" >
 					</div>
 				</form>
 			</div>
