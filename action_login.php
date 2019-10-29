@@ -82,7 +82,7 @@
 			<h2> Adminsök</h2>
 			</div>
 			<div class="adminform_wrapper">
-			<form action="action_adminSearch" method="post" id = "searchForm">
+			<form action="action_adminSearch.php" method="post" id = "searchForm">
 			<div class="adminID_field">
 							<label>adminID:</label>
 							<input type="text" name="adminID"
@@ -102,7 +102,7 @@
 						</div>
 						<button input type="button" name="searchAdminBtn" id="searchAdminBtn" onclick="searchAdminSubmit()" value="Submit"
 						> Sök Admin!</button>
-						<button input type="button" name= "searchAllAdminBtn" id="searchAllAdminBtn" onclick="searchAdminSubmit()" value="submit"> Sök Alla Admins</button>
+						<button input type="button" name= "searchAllAdminBtn" id="searchAllAdminBtn" onclick="searchAdminSubmit()" value="Submit"> Sök Alla Admins</button>
 					</form>
 					<div class="adminViewTable">
 					
