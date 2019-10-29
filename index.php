@@ -57,6 +57,18 @@
 			</div>
 			<aside class="box-3"> <!--News-->	
 				<div class="NyhetWrapper">
+					<?php
+					require('dbConnection.php');
+					$resultTable = mysqli_query($db_conn, "SELECT headline, nMessage FROM newsTable");
+					while ($array = mysqli_fetch_array($resultTable)) {
+
+						echo "<div class='comment-body'> <h3> ". $array[0] . "</h3><p>" . $array[1] . "</p></div>";
+
+					}
+
+					$db_conn->close();
+
+					?>
 					<article class="nyhet1">
 						<h2> Detta är en nyhet om en robot </h2>
 						<img class="nyhetsbild1" src="images/bild1.jpg" alt="nyhetsbilds>">
