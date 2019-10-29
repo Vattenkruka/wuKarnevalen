@@ -66,6 +66,12 @@ function reservationSubmit(){
 function applicationSubmit(){
   document.getElementById("applicationForm").submit();
 }
+function deleteAdminSubmit(){
+  document.getElementsById("adminForm").submit();
+}
+function searchAdminSubmit(){
+  document.getElementsById("searchForm").súbmit();
+}
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {

@@ -82,7 +82,7 @@
 			<h2> Adminsök</h2>
 			</div>
 			<div class="adminform_wrapper">
-			<form action="action_adminSearch" method="post">
+			<form action="action_adminSearch" method="post" id = "searchForm">
 			<div class="adminID_field">
 							<label>adminID:</label>
 							<input type="text" name="adminID"
