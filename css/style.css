@@ -8,6 +8,19 @@
 	margin-left:10%;
 }
 
+.newsTextArea{
+height:297px;
+width:490px;
+
+}
+
+.nyhetTextAreaWrapper textarea{
+height:297px;
+width:490px;
+margin-bottom:2%;
+margin-top:2%;
+} 
+
 .KarnevalsAdminH2{
 	font:Benguiat-BoldCondensed, Arial, Helvetica;
 	text-align:center;
@@ -61,7 +74,7 @@
 	border-radius:5px;
 	margin-bottom:2%;
 	width:300px;
-	height:150px;
+	height:80px;
 }
 
 .admin_messagebox p{

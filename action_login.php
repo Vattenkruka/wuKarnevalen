@@ -130,7 +130,20 @@
 					<h2>Adminverktyg gällande Nyheter</h2>
 				</div>
 				<div  class="adminverktygform">
-					<form action="#" method="POST" id="adminForm">
+					<form action="action_nyheter.php" method="POST" id="adminNyhetsForm">
+					<div>
+						<label>Headline: *</label>
+						<input type="text" name="headline" placeholder="Enter Headline" required>
+					</div>
+						<label>News Message: *</label>
+						<div class="nyhetTextAreaWrapper">
+						<textarea name="nMessage" form="adminNyhetsForm" id="newsTextArea" required></textarea>
+					</div>
+					</div>
+					<div>
+					<button input type="button" name="newsBtn" id=newsBtnID onclick="" value="Submit">Post!</button>
+					</div>
+
 					</form>
 					<div class="notificationh4">
 					<h4> Notifikationsfönster</h4>
@@ -147,7 +160,7 @@
 			<div class="adminform_wrapper">
 			
 					<div class="adminViewTable2">
-					<p>Här ska vi fixa inkludera en nyhetsflöde</p>
+					<p>Här ska vi fixa inkludera ett nyhetsflöde</p>
 					</div>
 				</div>
 			</div>
