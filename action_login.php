@@ -137,7 +137,7 @@
 					</div>
 						<label>News Message: *</label>
 						<div class="nyhetTextAreaWrapper">
-						<textarea name="nMessage" form="adminNyhetsForm" id="newsTextArea" required></textarea>
+						<textarea name="nmessage" form="adminNyhetsForm" id="newsTextArea" required></textarea>
 					</div>
 					</div>
 					<div>
