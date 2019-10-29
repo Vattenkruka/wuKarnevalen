@@ -8,6 +8,31 @@
 	margin-left:10%;
 }
 
+.KarnevalsAdminH2{
+	font:Benguiat-BoldCondensed, Arial, Helvetica;
+	text-align:center;
+	font-size:25px;
+	color:rgb(251,91,137);
+	margin-top:2%;
+	margin-bottom:2%;
+	border-top-style:solid;
+	border-color:rgb(251,91,137);
+	border-bottom-style:solid;
+}
+
+.adminViewTable{
+	margin-top:4%;
+	background-color:gray;
+	width:80%;
+	min-height:200px;
+	height:auto; 
+	border-style:ridge;
+	border-radius:5px;
+	box-sizing: border-box;
+	background: #FFFFD8;
+	margin-bottom:2%;
+}
+
 .portalh1 {
 	font:Benguiat-BoldCondensed, Arial, Helvetica;
 	text-align:center;
