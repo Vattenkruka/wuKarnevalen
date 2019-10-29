@@ -18,7 +18,7 @@
 					<h3> Reservera Biljett</h3>
 					
 
-					<form  action="action_ticket.php" method="POST" id="ticketForm">
+					<form  action="action_reservation.php" method="POST" id="ticketForm">
 						<div>
 							<label>Email: *</label>
 							<input type="text" name="name"
@@ -34,7 +34,7 @@
 						</select>
 					</div>						
 					<br>
-						<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+						<button input type="button" name="commentBtn" id="commentBtnId" onclick="reservationSubmit()" value="Submit"
 						> Reservera Biljett</button>
 					</form>
 				</div>
