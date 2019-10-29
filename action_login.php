@@ -154,7 +154,7 @@
 				</div>
 			</div>
 			<div class="admin_read_wrapper">
-			<div class="linkh2">
+			<div class="linkh2_2">
 			<h2> Nuvarande Nyhetsflöde</h2>
 			</div>
 			<div class="adminform_wrapper">
