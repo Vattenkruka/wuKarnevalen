@@ -11,9 +11,7 @@
 <header>
 	<?php include 'header.php';?>
 </header>
-<body>
-
-	<div class="portalh1"> 
+<body>	<div class="portalh1"> 
 		<h1> Karnevalsportalen För Administratörer </h1>
 	</div>
 	<div class="admin_crud_wrapper">
@@ -33,6 +31,13 @@
 				</div>
 				<div  class="adminverktygform">
 					<form action="action_admin.php" method="POST" id="adminForm">
+						<div class="selectOption">
+						<select name=condition>
+						<option value="create">Create Admin</option>
+						<option value="update">Update Admin</option>
+						<option value="delete">Delete Admin</option>
+					</select>
+						</div>
 						<div class="adminID_field">
 							<label>adminID:*</label>
 							<input type="text" name="adminID"
@@ -50,7 +55,7 @@
 							<input type="text" name="adminID"
 							placeholder="Enter password">
 						</div>
-						<button input type="button" name="createAdminBtn" id="createAdminBtnId" onclick="adminSubmit()" value="Submit"
+						<button input type="submit" name="createAdminBtn" id="createAdminBtnId" onclick="adminSubmit()" value="Submit"
 						> Skapa Admin</button>
 						<button input type="button" name="updateAdminBtn" id="updateAdminBtnId" onclick="adminSubmit()" value="Submit"
 						> Uppdatera Admin</button>
@@ -123,13 +128,17 @@
 						<label>Headline: *</label>
 						<input type="text" name="headline" placeholder="Enter Headline" required>
 					</div>
+					<div>
+						<label>Image:</label>
+						<input type="text" name="image" placeholder="Enter image name" required>
+					</div>
 						<label>News Message: *</label>
 						<div class="nyhetTextAreaWrapper">
 						<textarea name="nmessage" form="adminNyhetsForm" id="newsTextArea" required></textarea>
 					</div>
 					</div>
 					<div>
-					<button input type="button" name="newsBtn" id=newsBtnID onclick="" value="Submit">Post!</button>
+					<button input type="button" name="newsBtn" id=newsBtnID onclick="newsSubmit()" value="Submit">Post!</button>
 					</div>
 
 					</form>

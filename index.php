@@ -59,12 +59,13 @@
 				<div class="NyhetWrapper">
 					<?php
 					require('dbConnection.php');
-					$resultTable = mysqli_query($db_conn, "SELECT headline, nmessage FROM newsTable");
+					$resultTable = mysqli_query($db_conn, "SELECT headline,image, nmessage FROM newsTable");
 					while ($array = mysqli_fetch_array($resultTable)) {
 
-						echo "<div class='comment-body'> <h3> ". $array[0] . "</h3><p>" . $array[1] . "</p></div>";
+						echo "<div class='comment-body'> <h3> ". $array[0] . "</h3><p>" . $array[1] . "</p>" . $array[2] ."</div>";
 
 					}
+
 
 					$db_conn->close();
 

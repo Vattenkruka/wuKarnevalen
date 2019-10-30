@@ -67,30 +67,16 @@ function applicationSubmit(){
   document.getElementById("applicationForm").submit();
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function adminSubmit(){
   document.getElementById("adminForm").submit();
 
 }
 function searchAdminSubmit(){
   document.getElementById("searchForm").submit();
+}
+
+function newsSubmit(){
+  document.getElementById("adminNyhetsForm").submit();
 }
 
 function initMap() {

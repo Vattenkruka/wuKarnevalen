@@ -1,16 +1,31 @@
 <?php
 require('dbConnection.php');
 $HEADLINE = $_POST["headline"];
-$NMESSAGE =
-$_POST["nmessage"];
+$IMAGE = $_POST["image"];
+$NMESSAGE = $_POST["nmessage"];
 
+/*$sql = "DROP TABLE newsTable";
+if ($db_conn->query($sql) === TRUE) {
+	echo "New table created successfully";
+} else {
+	echo "Fel: " . $sql . "<br>" . $db_conn->error;
+}
+*/
 
-$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
-OR die ('No DB-connection via MySQLi');
+/*$tmpQuery = "CREATE TABLE newsTable (
+newsID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+headline varchar(30),
+image varchar(30), 
+nmessage varchar(400)
+)";*/
+
+/*$result = mysqli_query($db_conn, $tmpQuery);
+echo $result;*/
+
 
 if (!empty($HEADLINE)) {
-	$sql = "INSERT INTO newsTable (headline,nmessage)
-	VALUES ('$HEADLINE','$NMESSAGE')";
+	$sql = "INSERT INTO newsTable (headline, image, nmessage)
+	VALUES ('$HEADLINE', '$IMAGE', '$NMESSAGE')";
 
 	if ($db_conn->query($sql) === TRUE) {
 		echo "<br />Din nyhet har laddats upp!<br /><br />";
@@ -21,9 +36,10 @@ if (!empty($HEADLINE)) {
 	}
 }
 
+
+
+
 $db_conn->close();
 
-header("Location: action_login.php");
-exit;
 
 ?>
