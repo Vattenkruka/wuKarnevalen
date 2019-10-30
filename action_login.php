@@ -143,7 +143,7 @@
 						</div>
 						<div>
 							<label>Image:</label>
-							<input type="text" name="image" placeholder="Enter image name" required>
+							<input type="text" name="image" placeholder="Enter image name" required pattern="[(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)]">
 						</div>
 						<label>News Message: *</label>
 						<div class="nyhetTextAreaWrapper">
