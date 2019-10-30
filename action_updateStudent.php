@@ -9,7 +9,7 @@ $EMAIL = $_POST["email"];
 $TELEFON = $_POST["telefon"];
 
 
-if(!empty($studentID)) { 
+if(!empty($STUDENTID)) { 
 	$sql = "UPDATE studentTable
 	SET förnamn='$FÖRNAMN',
 	efternamn='$EFTERNAMN',
