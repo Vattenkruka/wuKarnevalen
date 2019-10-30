@@ -15,11 +15,11 @@ $SECTION = $_POST["section"];
 */
 
 /*if($_POST["searchAllAdminBtn"]){*/
-	$resultTable = mysqli_query($db_conn, "SELECT * FROM adminTable WHERE '$SECTION'= section" );
+	$resultTable = mysqli_query($db_conn, "SELECT * FROM studentTable WHERE '$SECTION'= section" );
 	echo"<h3> Hittat studenter enligt section </h3>";
 		while ($array = mysqli_fetch_array($resultTable)) {
 		echo "<br>";
-		echo " <tr> <td>". $array[0] . "</td> <td>" . $array[1] . "</td> <td> " . $array[2]. "</td> </tr>";
+		echo " <tr> <td>". $array[0] . "</td> <td>" . $array[1] . "</td> <td> " . $array[2]. "</td> <td>" . $array[3] . "</td> <td>" . $array[4] . "</td> <td> " . $array[5]. "</td> </tr>";
 		
 		}
 
