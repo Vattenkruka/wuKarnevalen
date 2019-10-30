@@ -17,8 +17,8 @@ $USERNAME = $_POST["username"];
 */
 
 /*if($_POST["searchAllAdminBtn"]){*/
-	$resultTable = mysqli_query($db_conn, "SELECT * FROM adminTable WHERE '$ADMINID'= adminID ");
-	echo"<h3> Nuvarande adminkonton </h3>";
+	$resultTable = mysqli_query($db_conn, "SELECT * FROM adminTable WHERE '$ADMINID'= adminID OR '$PASSWORD' = password OR '$USERNAME' = username" );
+	echo"<h3> Hittat adminkonto </h3>";
 		while ($array = mysqli_fetch_array($resultTable)) {
 		echo "<br>";
 		echo " <tr> <td>". $array[0] . "</td> <td>" . $array[1] . "</td> <td> " . $array[2]. "</td> </tr>";
