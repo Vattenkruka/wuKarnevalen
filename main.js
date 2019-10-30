@@ -76,7 +76,7 @@ function adminUpdateSubmit(){
 }
 
 function adminDeleteSubmit(){
-  document.getElementById("adminForm").submit();
+  document.getElementById("adminDeleteForm").submit();
 }
 
 function searchAdminSubmit(){

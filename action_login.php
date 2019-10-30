@@ -52,8 +52,8 @@
 					<form action="action_updateAdmin.php" method="POST" id="adminUpdateForm">
 						<div class="adminID_field">
 							<label>adminID:*</label>
-							<input type="text" name="adminID"
-							placeholder="Enter adminID" pattern= "[0-9]"  required>
+							<input type="text" name="adminId"
+							placeholder="Enter adminId" pattern= "[0-9]"  required>
 						</div>
 						<div class="username_field">
 							<label>Username:</label>
@@ -72,13 +72,13 @@
 				</div>
 				<div  class="adminverktygform">
 					<h3>Ta Bort Admin</h3>
-					<form action="action_admin.php" method="POST" id="adminForm">
+					<form action="action_deleteAdmin.php" method="POST" id="adminDeleteForm">
 						<div class="adminID_field">
 							<label>adminID:*</label>
-							<input type="text" name="adminID"
-							placeholder="Enter adminID" pattern= "[0-9]"  required>
+							<input type="text" name="adminId"
+							placeholder="Enter adminId" pattern= "[0-9]"  required>
 						</div>
-						<button input type="button" name="deleteAdminBtn" id="deleteAdminBtnId" onclick="adminSubmit()" value="Submit"
+						<button input type="button" name="deleteAdminBtn" id="deleteAdminBtnId" onclick="adminDeleteSubmit()" value="Submit"
 						> Ta bort Admin</button>
 					</form>
 				</div>

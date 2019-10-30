@@ -1,13 +1,16 @@
 <?php
+
 require('dbConnection.php');
 
-$ADMINId = $_POST["adminID"]; 
+$ADMINId = $_POST["adminId"]; 
 $USERNAME = $_POST["username"];
 $PASSWORD = $_POST["password"];
 
 if(!empty($USERNAME)) { 
-	$sql = "UPDATE adminTable(username,password)
-	VALUES ('$USERNAME','$PASSWORD') WHERE adminID=$ADMINId";
+	$sql = "UPDATE adminTable
+	SET username='$USERNAME',
+	password='$PASSWORD'
+	WHERE adminId='$ADMINId'";
 
 	echo "Hohoh";
 
