@@ -19,7 +19,7 @@ if (!empty($HEADLINE)) {
 		
 		$db_conn->error;
 	}
-};
+}
 
 $db_conn->close();
 
