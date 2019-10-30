@@ -13,18 +13,6 @@
 </header>
 <body>
 
-	<?php
-	require('dbConnection.php');
-	$USERNAME = $_POST["username"];
-	$PASSWORD =
-	$_POST["password"];
-
-	$db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
-	OR die ('No DB-connection via MySQLi');
-
-	$db_conn->close();
-	?>
-
 	<div class="portalh1"> 
 		<h1> Karnevalsportalen För Administratörer </h1>
 	</div>

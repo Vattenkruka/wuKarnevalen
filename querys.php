@@ -85,7 +85,7 @@ if ($db_conn->query($sql) === TRUE) {
 } else {
 	echo "Fel: " . $sql . "<br>" . $db_conn->error;
 }
-
+CREATE TABLE newsTable (newsID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, headline varchar(255), nmessage varchar(1000))
 -->
 */
 

@@ -66,8 +66,28 @@ function reservationSubmit(){
 function applicationSubmit(){
   document.getElementById("applicationForm").submit();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function adminSubmit(){
   document.getElementsById("adminForm").submit();
+
 }
 function searchAdminSubmit(){
   document.getElementById("searchForm").submit();
