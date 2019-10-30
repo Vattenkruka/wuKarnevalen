@@ -70,7 +70,7 @@ function deleteAdminSubmit(){
   document.getElementsById("adminForm").submit();
 }
 function searchAdminSubmit(){
-  document.getElementsById("searchForm").submit();
+  document.getElementById("searchForm").submit();
 }
 
 function initMap() {
