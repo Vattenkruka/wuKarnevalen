@@ -57,12 +57,13 @@
 			</div>
 			<aside class="box-3"> <!--News-->	
 				<div class="NyhetWrapper">
+					<h1>Nyhetsflöde</h1>
 					<?php
 					require('dbConnection.php');
 					$resultTable = mysqli_query($db_conn, "SELECT headline,image, nmessage FROM newsTable");
 					while ($array = mysqli_fetch_array($resultTable)) {
 
-						echo "<div class='comment-body'> <h3> ". $array[0] . "</h3><p>" . $array[1] . "</p>" . $array[2] ."</div>";
+						echo "<div class='comment-body'> <h3> ". $array[0] . "</h3>" ."<img class='nyhetsbild1' src='images/" . $array[1] ."' alt='nyhetsbild1'" ."</img>". "<p>" . $array[2] ."</p></div>";
 
 					}
 
@@ -70,21 +71,6 @@
 					$db_conn->close();
 
 					?>
-					<article class="nyhet1">
-						<h2> Detta är en nyhet om en robot </h2>
-						<img class="nyhetsbild1" src="images/bild1.jpg" alt="nyhetsbilds>">
-						<p>Nulla consectetur, nunc eu sodales congue, risus risus dignissim nulla, quis venenatis augue nisi molestie elit. Sed venenatis porttitor ultricies. Nunc ante arcu, efficitur eu scelerisque maximus, aliquam at magna. Maecenas sit amet lorem ac odio eleifend iaculis nec ac purus. Duis vel nulla fringilla, convallis purus quis, condimentum nisl.
-						</p>
-					</article>
-					<article class ="nyhet2">
-						<h2> Detta är inte en nyhet om en robot </h2>
-						<img class = "nyhetsbild2" src="images/Karneval2010010.jpg" alt ="nyhetsbild">
-						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
-					</article>
-					
 				</div>
 			</aside>
 		</main>

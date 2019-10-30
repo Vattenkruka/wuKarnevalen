@@ -67,10 +67,18 @@ function applicationSubmit(){
   document.getElementById("applicationForm").submit();
 }
 
-function adminSubmit(){
-  document.getElementById("adminForm").submit();
-
+function adminCreateSubmit(){
+  document.getElementById("adminCreateForm").submit();
 }
+
+function adminUpdateSubmit(){
+  document.getElementById("adminUpdateForm").submit();
+}
+
+function adminDeleteSubmit(){
+  document.getElementById("adminForm").submit();
+}
+
 function searchAdminSubmit(){
   document.getElementById("searchForm").submit();
 }

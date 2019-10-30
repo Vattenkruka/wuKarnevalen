@@ -13,6 +13,12 @@
 	margin-bottom:2%;
 }
 
+
+.nbwrapper{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
 .newsTextArea{
 height:297px;
 width:490px;
@@ -109,12 +115,11 @@ margin-top:2%;
 }
 
 .admin_crud_wrapper{
-	display:flex;
+	margin-left:3%;
 }
 
 .link_list_wrapper{
 	flex:1;
-	margin-left:1%;
 }
 
 .admin_cdu_wrapper{
@@ -684,7 +689,11 @@ ul.comments-holder-ul li.comment-holder .comment-text{
 .nyhetsbild1 {
 	width:40%;
 	border-radius:50%;
-	
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-right:auto;
+	margin-left:auto;
+
 }
 .nyhet2{
 	width:100%;

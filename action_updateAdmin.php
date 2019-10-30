@@ -1,19 +1,19 @@
 <?php
 require('dbConnection.php');
 
-/*$ADMINId = $_POST["adminID"]; */
+$ADMINId = $_POST["adminID"]; 
 $USERNAME = $_POST["username"];
 $PASSWORD = $_POST["password"];
 
 if(!empty($USERNAME)) { 
-	$sql = "INSERT INTO adminTable(username,password)
-	VALUES ('$USERNAME','$PASSWORD')";
+	$sql = "UPDATE adminTable(username,password)
+	VALUES ('$USERNAME','$PASSWORD') WHERE adminID=$ADMINId";
 
 	echo "Hohoh";
 
 	if ($db_conn->query($sql) === TRUE) {
-		echo "<br />Du har skapat en admin!<br /><br />";
-		echo "$USERNAME" . "$PASSWORD"; 
+		echo "<br />Du har editerat en admin!<br /><br />";
+		echo "$USERNAME" ."<br>". "$PASSWORD"; 
 	} else {
 		echo "Fel: " . $sql . "<br>" . $db_conn->error;
 	}
