@@ -257,7 +257,7 @@
 
 				<h2> Sök på Student efter namn</h2>
 
-				<form action="#" method="POST" id="adminSearchStudentByNameStudentForm">
+				<form action="action_searchStudentByName.php" method="POST" id="adminSearchStudentByNameStudentForm">
 
 					<div>
 					<label>Förnamn *</label>
