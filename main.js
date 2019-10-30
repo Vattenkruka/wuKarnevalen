@@ -66,7 +66,7 @@ function reservationSubmit(){
 function applicationSubmit(){
   document.getElementById("applicationForm").submit();
 }
-function deleteAdminSubmit(){
+function adminSubmit(){
   document.getElementsById("adminForm").submit();
 }
 function searchAdminSubmit(){

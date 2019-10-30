@@ -62,11 +62,11 @@
 							<input type="text" name="adminID"
 							placeholder="Enter password">
 						</div>
-						<button input type="button" name="createAdminbtn" id="createAdminbtn" onclick="commentSubmit()" value="Submit"
+						<button input type="button" name="createAdminBtn" id="createAdminbtn" onclick="adminSubmit()" value="Submit"
 						> Skapa Admin</button>
-						<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+						<button input type="button" name="updateAdminBtn" id="commentBtnId" onclick="adminSubmit()" value="Submit"
 						> Uppdatera Admin</button>
-						<button input type="button" name="commentBtn" id="commentBtnId" onclick="commentSubmit()" value="Submit"
+						<button input type="button" name="deleteAdminBtn" id="commentBtnId" onclick="adminSubmit()" value="Submit"
 						> Ta bort Admin</button>
 					</form>
 					<div class="notificationh4">

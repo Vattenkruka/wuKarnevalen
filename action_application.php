@@ -13,7 +13,7 @@ if ($db_conn->query($sql) === TRUE) {
 	echo "Fel: " . $sql . "<br>" . $db_conn->error;
 }
 */
-/*
+
 $FÖRNAMN = $_POST["förnamn"];
 $EMAIL = $_POST["email"];
 $EFTERNAMN = $_POST["efternamn"];
@@ -32,11 +32,11 @@ if (!empty($EMAIL)) {
 		$db_conn->error;
 	}
 }
-*/
 
 
 
-$result = mysqli_query($db_conn, "SELECT * FROM studentTable");
+
+/*$result = mysqli_query($db_conn, "SELECT * FROM studentTable");
 while ($array = mysqli_fetch_array($result)){
 	echo $array[0];
 	echo $array[1];
@@ -46,7 +46,7 @@ while ($array = mysqli_fetch_array($result)){
 	echo $array[5];
 	echo $array[6];
 }
-
+*/
 
 
 $db_conn->close();
