@@ -182,7 +182,7 @@
 				</div>
 				<div class="adminform_wrapper">
 				<h2> Uppdatera Student</h2>
-				<Form action="#" method="POST" id="adminUpdateStudentForm">
+				<Form action="action_updateStudent.php" method="POST" id="adminUpdateStudentForm">
 				<div>
 						<label>StudentID *</label>
 						<input type="text" name="studentID"

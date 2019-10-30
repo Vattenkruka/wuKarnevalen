@@ -1,9 +1,6 @@
 <?php
 
 require('dbConnection.php');
- 
-$USERNAME = $_POST["username"];
-$PASSWORD = $_POST["password"];
 
 session_start();
 
