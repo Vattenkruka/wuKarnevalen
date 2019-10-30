@@ -275,7 +275,7 @@
 
 				<h2> Sök på alla studenter inom en sektion</h2>
 
-				<form action="#" method="POST" id="adminSearchStudentBySectionStudentForm">
+				<form action="action_searchStudentBySection" method="POST" id="adminSearchStudentBySectionStudentForm">
 
 				<label>Sektion: * </label>
 				<select name="section">
