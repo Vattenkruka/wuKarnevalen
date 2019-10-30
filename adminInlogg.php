@@ -17,7 +17,7 @@
 			<div class="login_h1">
 				<h1>AdminPortalen För Karnevalen</h1>
 			</div>
-			<form action="action_login.php" method="post">
+			<form action="action_ActualLogin.php" method="post">
 				<div class="login-container">
 					<div class="userbox">
 					<label for="username"><b>Username</b></label>
