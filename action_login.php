@@ -32,7 +32,7 @@
 					<h2>Adminverktyg gällande Admins</h2>
 				</div>
 				<div  class="adminverktygform">
-					<form action="action_admin" method="POST" id="adminForm">
+					<form action="action_admin.php" method="POST" id="adminForm">
 						<div class="adminID_field">
 							<label>adminID:*</label>
 							<input type="text" name="adminID"
@@ -50,11 +50,11 @@
 							<input type="text" name="adminID"
 							placeholder="Enter password">
 						</div>
-						<button input type="button" name="createAdminBtn" id="createAdminbtn" onclick="adminSubmit()" value="Submit"
+						<button input type="button" name="createAdminBtn" id="createAdminBtnId" onclick="adminSubmit()" value="Submit"
 						> Skapa Admin</button>
-						<button input type="button" name="updateAdminBtn" id="commentBtnId" onclick="adminSubmit()" value="Submit"
+						<button input type="button" name="updateAdminBtn" id="updateAdminBtnId" onclick="adminSubmit()" value="Submit"
 						> Uppdatera Admin</button>
-						<button input type="button" name="deleteAdminBtn" id="commentBtnId" onclick="adminSubmit()" value="Submit"
+						<button input type="button" name="deleteAdminBtn" id="deleteAdminBtnId" onclick="adminSubmit()" value="Submit"
 						> Ta bort Admin</button>
 					</form>
 					<div class="notificationh4">

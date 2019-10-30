@@ -23,6 +23,13 @@ if($_POST["updateAdminBtn"]){
 	$sql = "UPDATE adminTable(username, password)
 	VALUES('$USERNAME', '$PASSWORD')";
 
+if ($db_conn->query($sql) === TRUE) {
+		echo "<br />Din biljett är reserverad min gode herre<br /><br />";
+	} else {
+		echo "Fel: " . $sql . "<br>" . 
+		$db_conn->error;
+	}
+
 }
 
 

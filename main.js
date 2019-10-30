@@ -86,7 +86,7 @@ function applicationSubmit(){
 
 
 function adminSubmit(){
-  document.getElementsById("adminForm").submit();
+  document.getElementById("adminForm").submit();
 
 }
 function searchAdminSubmit(){
