@@ -1,4 +1,3 @@
-
 <a href="action_login.php"> Tillbaka </a>
 <?php
 require('dbConnection.php');
@@ -8,7 +7,7 @@ $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
 
-$ADMINId = $_POST["adminID"];
+$ADMINID = $_POST["adminID"];
 $PASSWORD = $_POST["password"];
 $USERNAME = $_POST["username"];
 /*if($_POST["searchAdminBtn"]){
@@ -18,7 +17,7 @@ $USERNAME = $_POST["username"];
 */
 
 /*if($_POST["searchAllAdminBtn"]){*/
-	$resultTable = mysqli_query($db_conn, "SELECT * FROM adminTable");
+	$resultTable = mysqli_query($db_conn, "SELECT * FROM adminTable WHERE '$ADMINID'= adminID ");
 	echo"<h3> Nuvarande adminkonton </h3>";
 		while ($array = mysqli_fetch_array($resultTable)) {
 		echo "<br>";
@@ -47,8 +46,3 @@ $USERNAME = $_POST["username"];
 $db_conn->close();
 
 ?>
-		
-		
-
-		
-		

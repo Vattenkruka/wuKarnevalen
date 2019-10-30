@@ -80,6 +80,9 @@ function adminDeleteSubmit(){
 }
 
 function searchAdminSubmit(){
+  document.getElementById("searchAllForm").submit();
+}
+function searchAdminByIdSubmit(){
   document.getElementById("searchForm").submit();
 }
 
