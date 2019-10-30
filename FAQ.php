@@ -86,7 +86,7 @@
 						<br>
 						<div>
 							<label>Comment: *</label>
-							<textarea name="comment" form="commentForm" id="commentTextArea"
+							<textarea name="comment" form="commentForm" id="newsTextArea"
 							placeholder="Enter Your Comment!" required></textarea>
 						</div>
 						<br>

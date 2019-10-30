@@ -90,6 +90,30 @@ function newsSubmit(){
   document.getElementById("adminNyhetsForm").submit();
 }
 
+function studentUpdateSubmit(){
+  document.getElementById("adminUpdateStudentForm").submit();
+}
+
+function studentDeleteSubmit(){
+  document.getElementById("adminDeleteStudentForm").submit();
+}
+
+function studentUpdateSection(){
+  document.getElementById("adminChangeSectionStudentForm").submit();
+}
+
+function studentSearchByName(){
+  document.getElementById("adminSearchStudentByNameStudentForm").submit();
+}
+
+function studentSearchBySection(){
+  document.getElementById("adminSearchStudentBySectionStudentForm").submit();
+}
+
+function studentMailBySection(){
+  document.getElementById("mailStudentBySectionStudentForm").submit();
+}
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom:13,

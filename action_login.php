@@ -176,25 +176,138 @@
 				<li> <a href="#Nyhetshantering">Nyhetshantering</a></li>
 				<li id="Ansökanhantering">Ansökanhantering</li></ol>
 			</div>
-			<div class="admin_cdu_wrapper">
-				<div class="linkh2">
-					<h2>Adminverktyg gällande Ansökan</h2>
-				</div>
-				<div  class="adminverktygform">
-					<form action="#" method="POST" id="adminForm">
-					</form>
-				</div>
-			</div>
 			<div class="admin_read_wrapper">
 				<div class="linkh2">
-					<h2> Data över Ansökningar</h2>
+					<h2> Adminverktyg Gällande Ansökan</h2>
 				</div>
 				<div class="adminform_wrapper">
+				<h2> Uppdatera Student</h2>
+				<Form action="#" method="POST" id="adminUpdateStudentForm">
+				<div>
+						<label>Förnamn *</label>
+						<input type="text" name="förnamn"
+						placeholder="Enter first name" pattern= "[a-zA-Z]+"  required>
+					</div>
+					<br>
+					<div>
+						<label>Efternamn *</label>
+						<input type="text" name="efternamn"
+						placeholder="Enter last name" pattern="[a-zA-Z]+" required>
+					</div>
+					<br>
+					<div>
+						<label>Email *</label>
+						<input type="email" name="email"
+						placeholder="Enter email" required>
+					</div>
+					<br>
+					<div>
+						<label>Telefon</label>
+						<input type="text" name="telefon"
+						placeholder="Enter phone number" pattern= "[0-9]">
+					</div>
+					<br>
+					<div>
+						<label>Sektion *</label>
+						<select name="section">
+							<option value="administerIT">AdministerIt</option>
+							<option value="biljonsen">Biljonsen</option>
+							<option value="blädderiet">Blädderiet</option>
+							<option value="dansen">Dansen</option>
+						</select>
+					</div>
+					<br>
+					<div class="submitbtn">
+						<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSubmit()" value="Submit" >
+					</div>
+
+				</Form>
+
+				<h2> Ta bort Student</h2>
+				<form action="#" method="POST" id="adminDeleteStudentForm">
+				<label>StudentID: *</label>
+				<input type="text" name="studentID"
+						placeholder="Enter studentID" pattern= "[0-9]">
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentDeleteSubmit()" value="Submit" >
+				</form>	
+
+				<h2> Byta sektion för student</h2>
+				<form action="#" method="POST" id="adminChangeSectionStudentForm">
+				
+				<label>StudentID: *</label>
+				<input type="text" name="studentID"
+				placeholder="Enter studentID">
+
+				<label>Sektion: * </label>
+				<select name="section">
+							<option value="administerIT">AdministerIt</option>
+							<option value="biljonsen">Biljonsen</option>
+							<option value="blädderiet">Blädderiet</option>
+							<option value="dansen">Dansen</option>
+						</select>
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSection()()" value="Submit">
+				</form>
+
+				<h2> Sök på Student efter namn</h2>
+
+				<form action="#" method="POST" id="adminSearchStudentByNameStudentForm">
+
+					<div>
+					<label>Förnamn *</label>
+						<input type="text" name="förnamn"
+						placeholder="Enter first name" pattern= "[a-zA-Z]+"  required>
+					</div>
+					<br>
+					<div>
+						<label>Efternamn *</label>
+						<input type="text" name="efternamn"
+						placeholder="Enter last name" pattern="[a-zA-Z]+" required>
+
+						<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentSearchByName()" value="Submit">
+				</form>
+
+				<h2> Sök på alla studenter inom en sektion</h2>
+
+				<form action="#" method="POST" id="adminSearchStudentBySectionStudentForm">
+
+				<label>Sektion: * </label>
+				<select name="section">
+							<option value="administerIT">AdministerIt</option>
+							<option value="biljonsen">Biljonsen</option>
+							<option value="blädderiet">Blädderiet</option>
+							<option value="dansen">Dansen</option>
+						</select>
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentSearchBySection()" value="Submit">
+				</form>
+
+				<h2> Maila samtliga inom samma sektion</h2>
+				<div class="x1">
+				<form action="#" method="POST" id="mailStudentBySectionStudentForm">
+					<div>
+						<label>Email *</label>
+						<input type="email" name="email"
+						placeholder="Enter email" required>
+					</div>
+					<label>MailTitle: *</label>
+					<input type="text" name="mailtitle"
+					placeholder="Enter mail title:" required>
+
+					<label>Content: *</label>
+					<textarea name="content" form="mailStudentBySectionStudentForm" id="commentTextArea"
+							placeholder="Enter Your Message!" required></textarea>
+
+					<label>Sektion: * </label>
+				<select name="section">
+							<option value="administerIT">AdministerIt</option>
+							<option value="biljonsen">Biljonsen</option>
+							<option value="blädderiet">Blädderiet</option>
+							<option value="dansen">Dansen</option>
+						</select>
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentMailBySection()" value="Submit">
+				</form>
+			</div>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<?php include 'footer.php';?>
-		</footer>
 	</body>
 	</html>
