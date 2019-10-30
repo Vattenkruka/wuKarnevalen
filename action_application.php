@@ -6,20 +6,20 @@ $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
 /*
-$sql = "CREATE TABLE studentTable (studentID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, förnamn varchar(30), efternamn varchar(30), email varchar(30), telefon INT, section varchar(30), medlem boolean )";
+$sql = "CREATE TABLE studentTable (studentID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, förnamn varchar(30), efternamn varchar(30), email varchar(30), telefon INT, section varchar(30), medlem varchar(30))";
 if ($db_conn->query($sql) === TRUE) {
 	echo "New table created successfully";
 } else {
 	echo "Fel: " . $sql . "<br>" . $db_conn->error;
-}
-*/
+}*/
+
 
 $FÖRNAMN = $_POST["förnamn"];
 $EMAIL = $_POST["email"];
 $EFTERNAMN = $_POST["efternamn"];
 $TELEFON = $_POST["telefon"];
 $SECTION = $_POST["section"];
-$MEDLEM = false;
+$MEDLEM = "ej medlem";
 if (!empty($EMAIL)) {
 	$sql = "INSERT INTO studentTable (förnamn, efternamn, email, telefon, section, medlem)
 	VALUES ('$FÖRNAMN', '$EFTERNAMN', '$EMAIL', '$TELEFON', '$SECTION', '$MEDLEM')"	
@@ -32,6 +32,13 @@ if (!empty($EMAIL)) {
 		$db_conn->error;
 	}
 }
+/*
+$sql = "DROP TABLE studentTable";
+if ($db_conn->query($sql) === TRUE) {
+	echo "New table created successfully";
+} else {
+	echo "Fel: " . $sql . "<br>" . $db_conn->error;
+}*/
 
 
 

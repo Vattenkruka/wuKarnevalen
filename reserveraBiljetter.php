@@ -34,7 +34,7 @@
 						</select>
 					</div>						
 					<br>
-						<button input type="button" name="commentBtn" id="commentBtnId" onclick="reservationSubmit()" value="Submit"
+						<button input type="button" name="reservationBtn" id="reservationBtnId" onclick="reservationSubmit()" value="Submit"
 						> Reservera Biljett</button>
 					</form>
 				</div>
