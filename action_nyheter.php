@@ -21,4 +21,9 @@ if (!empty($HEADLINE)) {
 	}
 };
 
+$db_conn->close();
+
+header("Location: action_login.php");
+exit;
+
 ?>
