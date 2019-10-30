@@ -224,7 +224,7 @@
 				</form>	
 
 				<h2> Byta sektion för student</h2>
-				<form action="#" method="POST" id="adminChangeSectionStudentForm">
+				<form action="action_changeStudentSection.php" method="POST" id="adminChangeSectionStudentForm">
 				
 				<label>StudentID: *</label>
 				<input type="text" name="studentID"

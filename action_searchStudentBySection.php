@@ -7,8 +7,7 @@ $db_conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 OR die ('No DB-connection via MySQLi');
 
 
-$FÖRNAMN = $_POST["förnamn"];
-$EFTERNAMN = $_POST["efternamn"];
+$SECTION = $_POST["section"];
 
 /*if($_POST["searchAdminBtn"]){
 	$sql = "INSERT INTO adminTable(username, password)
@@ -17,7 +16,7 @@ $EFTERNAMN = $_POST["efternamn"];
 */
 
 /*if($_POST["searchAllAdminBtn"]){*/
-	$resultTable = mysqli_query($db_conn, "SELECT * FROM studentTable WHERE '$FÖRNAMN'= förnamn AND '$EFTERNAMN'= efternamn" );
+	$resultTable = mysqli_query($db_conn, "SELECT * FROM studentTable WHERE '$SECTION'= section" );
 	echo"<h3> Hittat studenter enligt section </h3>";
 		while ($array = mysqli_fetch_array($resultTable)) {
 		echo "<br>";
