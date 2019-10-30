@@ -16,10 +16,20 @@ $STUDENTID = $_POST["studentID"]
 */
 
 /*if($_POST["searchAllAdminBtn"]){*/
-	$resultTable = mysqli_query($db_conn, "UPDATE studentTable SET '$SECTION' = section WHERE '$STUDENTID' = studentID" );
-	echo"<h3> Studentens sektion uppdaterad </h3>";
+	if(!empty($STUDENTID)) { 
+	$sql = "UPDATE studentTable
+	SET section='$SECTION',
+	WHERE studentID='$STUDENTID'";
+}
+
+
+	if ($db_conn->query($sql) === TRUE) {
+		echo "<br />Du har editerat en student!<br /><br />"; 
+	} else {
+		echo "Fel: " . $sql . "<br>" . $db_conn->error;
+	}
+
 		
-		}
 
 		
 /*}*/
