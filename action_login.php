@@ -108,8 +108,8 @@
 						</div>
 						<button input type="button" name="searchAdminBtn" id="searchAdminBtn" onclick="searchAdminSubmit()" value="Submit"
 						> Sök Admin!</button>
-						<button input type="button" name= "searchAllAdminBtn" id="searchAllAdminBtn" onclick="searchAdminSubmit()" value="Submit"> Sök Alla Admins</button>
 					</form>
+					<button input type="button" name= "searchAllAdminBtn" id="searchAllAdminBtn" onclick="searchAdminSubmit()" value="Submit"> Sök Alla Admins</button>
 				</div>
 			</div>
 			
