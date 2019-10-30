@@ -184,6 +184,9 @@
 				<h2> Uppdatera Student</h2>
 				<Form action="#" method="POST" id="adminUpdateStudentForm">
 				<div>
+						<label>StudentID *</label>
+						<input type="text" name="studentID"
+						placeholder="enter studentID" pattern="[0-9]">
 						<label>Förnamn *</label>
 						<input type="text" name="förnamn"
 						placeholder="Enter first name" pattern= "[a-zA-Z]+"  required>
@@ -206,17 +209,6 @@
 						<input type="text" name="telefon"
 						placeholder="Enter phone number" pattern= "[0-9]">
 					</div>
-					<br>
-					<div>
-						<label>Sektion *</label>
-						<select name="section">
-							<option value="administerIT">AdministerIt</option>
-							<option value="biljonsen">Biljonsen</option>
-							<option value="blädderiet">Blädderiet</option>
-							<option value="dansen">Dansen</option>
-						</select>
-					</div>
-					<br>
 					<div class="submitbtn">
 						<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSubmit()" value="Submit" >
 					</div>
@@ -244,6 +236,21 @@
 							<option value="biljonsen">Biljonsen</option>
 							<option value="blädderiet">Blädderiet</option>
 							<option value="dansen">Dansen</option>
+						</select>
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSection()()" value="Submit">
+				</form>
+
+				<h2> Ändra medlemskapsstatus på student </h2>
+				<form action="#" method="POST" id="adminChangeSectionStudentForm">
+				
+				<label>StudentID: *</label>
+				<input type="text" name="studentID"
+				placeholder="Enter studentID">
+
+				<label>Status: * </label>
+				<select name="section">
+							<option value="administerIT">Medlem</option>
+							<option value="biljonsen">Ej medlem</option>
 						</select>
 				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSection()()" value="Submit">
 				</form>
@@ -283,11 +290,7 @@
 				<h2> Maila samtliga inom samma sektion</h2>
 				<div class="x1">
 				<form action="#" method="POST" id="mailStudentBySectionStudentForm">
-					<div>
-						<label>Email *</label>
-						<input type="email" name="email"
-						placeholder="Enter email" required>
-					</div>
+					
 					<label>MailTitle: *</label>
 					<input type="text" name="mailtitle"
 					placeholder="Enter mail title:" required>
