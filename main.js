@@ -67,7 +67,7 @@ function applicationSubmit(){
   document.getElementById("applicationForm").submit();
 }
 function deleteAdminSubmit(){
-  document.getElementsById("adminForm").submit();
+  document.getElementById("adminForm").submit();
 }
 function searchAdminSubmit(){
   document.getElementById("searchForm").submit();
