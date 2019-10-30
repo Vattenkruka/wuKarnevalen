@@ -88,7 +88,7 @@
 					<h2> Adminsök</h2>
 				</div>
 				<div class="adminform_wrapper">
-					<form action="action_adminSearchByInput" method="post" id="searchForm">
+					<form action="action_adminSearchByInput.php" method="post" id="searchForm">
 						<div class="adminID_field">
 							<label>adminID:</label>
 							<input type="text" name="adminID"
