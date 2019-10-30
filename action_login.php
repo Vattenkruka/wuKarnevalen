@@ -216,7 +216,7 @@
 				</Form>
 
 				<h2> Ta bort Student</h2>
-				<form action="#" method="POST" id="adminDeleteStudentForm">
+				<form action="action_studentDelete.php" method="POST" id="adminDeleteStudentForm">
 				<label>StudentID: *</label>
 				<input type="text" name="studentID"
 						placeholder="Enter studentID" pattern= "[0-9]">
@@ -228,7 +228,7 @@
 				
 				<label>StudentID: *</label>
 				<input type="text" name="studentID"
-				placeholder="Enter studentID">
+				placeholder="Enter studentID" pattern ="[0-9]">
 
 				<label>Sektion: * </label>
 				<select name="section">
