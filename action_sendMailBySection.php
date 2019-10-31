@@ -8,8 +8,8 @@ $SECTION = $_POST["section"];
 $EMAIL;
 //"SELECT id, email, mailtitle,content FROM "
 
-if($SECTION = 'AdministerIT'){
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='AdministerIT");
+if($SECTION == 'AdministerIT'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='AdministerIT'");
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
@@ -22,9 +22,9 @@ if($SECTION = 'AdministerIT'){
 	
 
 
-else if($SECTION = 'Biljonsen'){
+else if($SECTION == 'Biljonsen'){
 
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Biljonsen");
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Biljonsen'");
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
@@ -36,9 +36,9 @@ else if($SECTION = 'Biljonsen'){
 
 }
 
-else if($SECTION = 'Blädderiet'){
+else if($SECTION == 'Blädderiet'){
 
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Blädderiet");
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Blädderiet'");
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
@@ -49,8 +49,8 @@ else if($SECTION = 'Blädderiet'){
 	mail($string,$MAILTITLE,$CONTENT);
 }
 
-else if($SECTION = 'Dansen'){
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Dansen");
+else if($SECTION == 'Dansen'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Dansen'");
 	echo 'Hej';
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
