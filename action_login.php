@@ -289,7 +289,7 @@
 
 				<h2> Maila samtliga inom samma sektion</h2>
 				<div class="x1">
-				<form action="#" method="POST" id="mailStudentBySectionStudentForm">
+				<form action="action_sendMailBySection.php" method="POST" id="mailStudentBySectionStudentForm">
 					
 					<label>MailTitle: *</label>
 					<input type="text" name="mailtitle"

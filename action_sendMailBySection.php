@@ -1,0 +1,62 @@
+<?php
+
+require('dbConnection.php');
+
+$MAILTITLE = $_POST["mailtitle"]; 
+$CONTENT = $_POST["content"];
+$SECTION = $_POST["section"];
+$EMAIL;
+$EMAILS = array();
+//"SELECT id, email, mailtitle,content FROM "
+
+if($SECTION == 'AdministerIT'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='AdministerIT");
+	while($EMAILS = mysqli_fetch_array($resultTable)){
+		$EMAIL=array[0];
+		mail("$EMAIL,$MAILTITLE,$CONTENT");
+	}
+	
+}
+
+else if($SECTION == 'Biljonsen'){
+
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Biljonsen");
+	while($row=$resultTable->fetch_array()){
+		if($rows=="")
+		$rows.=$row['email'];
+		else
+		$rows.=','.$row['email'];
+	}
+	$String = implode(','$cc);
+	mail($string,$MAILTITLE,$CONTENT);
+
+}
+
+else if($SECTION == 'Blädderiet'){
+
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Blädderiet");
+	while($row=$resultTable->fetch_array()){
+		if($rows=="")
+		$rows.=$row['email'];
+		else
+		$rows.=','.$row['email'];
+	}
+	$String = implode(','$cc);
+	mail($string,$MAILTITLE,$CONTENT);
+}
+
+else if($SECTION == 'Dansen'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Dansen");
+	while($row=$resultTable->fetch_array()){
+		if($rows=="")
+		$rows.=$row['email'];
+		else
+		$rows.=','.$row['email'];
+	}
+	$String = implode(','$cc);
+	mail($string,$MAILTITLE,$CONTENT);
+	
+}			
+
+
+?>
