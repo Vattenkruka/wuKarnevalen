@@ -26,7 +26,7 @@ if (!empty($EMAIL)) {
 	;
 
 	if ($db_conn->query($sql) === TRUE) {
-		echo "<br />Din biljett är reserverad min gode herre<br /><br />";
+		echo "<br />Tack för din ansökan!<br /><br />";
 	} else {
 		echo "Fel: " . $sql . "<br>" . 
 		$db_conn->error;

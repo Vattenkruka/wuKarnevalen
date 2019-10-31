@@ -113,6 +113,9 @@ function studentSearchBySection(){
 function studentMailBySection(){
   document.getElementById("mailStudentBySectionStudentForm").submit();
 }
+function studentApprove(){
+  document.getElementById("adminApproveStudentForm").submit();
+}
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {

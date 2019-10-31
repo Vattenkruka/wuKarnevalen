@@ -21,16 +21,16 @@
 					<form  action="action_reservation.php" method="POST" id="ticketForm">
 						<div>
 							<label>Email: *</label>
-							<input type="text" name="name"
+							<input type="text" name="email"
 							placeholder="Enter Your Email!" required>
 						</div>
 						<br>
 						<div>
 						<label>Önskad Biljett *</label>
-						<select name="section">
-							<option value="administerIT">Spexet</option>
-							<option value="biljonsen">Cirkusen</option>
-							<option value="blädderiet">Revyn</option>
+						<select name="event">
+							<option value="Spexet">Spexet</option>
+							<option value="Cirkusen">Cirkusen</option>
+							<option value="Revyn">Revyn</option>
 						</select>
 					</div>						
 					<br>

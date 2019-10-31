@@ -182,7 +182,7 @@
 				</div>
 				<div class="adminform_wrapper">
 				<h2> Uppdatera Student</h2>
-				<Form action="action_updateStudent.php" method="POST" id="adminUpdateStudentForm">
+				<Form action="#" method="POST" id="adminUpdateStudentForm">
 				<div>
 						<label>StudentID *</label>
 						<input type="text" name="studentID"
@@ -216,7 +216,7 @@
 				</Form>
 
 				<h2> Ta bort Student</h2>
-				<form action="#" method="POST" id="adminDeleteStudentForm">
+				<form action="action_studentDelete.php" method="POST" id="adminDeleteStudentForm">
 				<label>StudentID: *</label>
 				<input type="text" name="studentID"
 						placeholder="Enter studentID" pattern= "[0-9]">
@@ -228,7 +228,7 @@
 				
 				<label>StudentID: *</label>
 				<input type="text" name="studentID"
-				placeholder="Enter studentID">
+				placeholder="Enter studentID" pattern ="[0-9]">
 
 				<label>Sektion: * </label>
 				<select name="section">
@@ -237,22 +237,22 @@
 							<option value="blädderiet">Blädderiet</option>
 							<option value="dansen">Dansen</option>
 						</select>
-				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSection()()" value="Submit">
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSection()" value="Submit">
 				</form>
 
 				<h2> Ändra medlemskapsstatus på student </h2>
-				<form action="#" method="POST" id="adminChangeSectionStudentForm">
+				<form action="action_approveStudent.php" method="POST" id="adminApproveStudentForm">
 				
 				<label>StudentID: *</label>
-				<input type="text" name="studentID"
+				<input type="action_approveStudent.php" name="studentID"
 				placeholder="Enter studentID">
 
 				<label>Status: * </label>
-				<select name="section">
-							<option value="administerIT">Medlem</option>
-							<option value="biljonsen">Ej medlem</option>
+				<select name="medlemstatus">
+							<option value="medlem">Medlem</option>
+							<option value="ej medlem">Ej medlem</option>
 						</select>
-				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentUpdateSection()()" value="Submit">
+				<input type="button" name="applicationBtn" id="applicationBtnId" onclick="studentApprove()" value="Submit">
 				</form>
 
 				<h2> Sök på Student efter namn</h2>
