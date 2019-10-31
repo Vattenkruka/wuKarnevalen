@@ -8,59 +8,66 @@ $SECTION = $_POST["section"];
 $EMAIL;
 //"SELECT id, email, mailtitle,content FROM "
 
-if($SECTION == 'AdministerIT'){
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='AdministerIT'");
+
+
+if($SECTION === 'administerIT'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='administerIT'");
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
 		else
 		$rows.=','.$row['email'];
 	}
-	$String = implode(',',$cc);
-	mail($string,$MAILTITLE,$CONTENT);
+	$TO = explode(',',$rows);
+	$STRING = implode(',',$TO);
+	mail($STRING,$MAILTITLE,$CONTENT);
+	echo 'Mail skickat!';
 	}
 	
 
-
-else if($SECTION == 'Biljonsen'){
-
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Biljonsen'");
+else if($SECTION === 'biljonsen'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='biljonsen'");
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
 		else
 		$rows.=','.$row['email'];
 	}
-	$String = implode(',',$cc);
-	mail($string,$MAILTITLE,$CONTENT);
+	$TO = explode(',',$rows);
+	$STRING = implode(',',$TO);
+	mail($STRING,$MAILTITLE,$CONTENT);
+	echo 'Mail skickat!';
 
 }
 
-else if($SECTION == 'Blädderiet'){
-
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Blädderiet'");
+else if($SECTION === 'blädderiet'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='blädderiet'");
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
 		else
 		$rows.=','.$row['email'];
 	}
-	$String = implode(',',$cc);
-	mail($string,$MAILTITLE,$CONTENT);
+	$TO = explode(',',$rows);
+	$STRING = implode(',',$TO);
+	mail($STRING,$MAILTITLE,$CONTENT);
+	echo 'Mail skickat';
 }
 
-else if($SECTION == 'Dansen'){
-	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='Dansen'");
+else if($SECTION === 'dansen'){
+	$resultTable =mysqli_query($db_conn, "SELECT email FROM studentTable WHERE section='$SECTION'");
 	echo 'Hej';
 	while($row=$resultTable->fetch_array()){
 		if($rows=="")
 		$rows.=$row['email'];
 		else
 		$rows.=','.$row['email'];
+	
 	}
-	echo 'Hej 2';
-	$String = implode(',',$cc);
-	mail($string,$MAILTITLE,$CONTENT);
+	$TO = explode(',',$rows);
+	$STRING = implode(',',$TO);
+	mail($STRING,$MAILTITLE,$CONTENT);
+	echo 'Mail skickat!';
 	
 }			
 
