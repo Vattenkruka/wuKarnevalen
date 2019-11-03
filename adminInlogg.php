@@ -17,7 +17,7 @@
 			<div class="login_h1">
 				<h1>AdminPortalen För Karnevalen</h1>
 			</div>
-			<form action="action_ActualLogin.php" method="post">
+			<form action="action_ActualLogin.php" method="POST" id="loginForm">
 				<div class="login-container">
 					<div class="userbox">
 					<label for="username"><b>Username</b></label>
@@ -29,7 +29,8 @@
 					required>
 					</div>
 					<div class="loginbox">
-					<button type="submit" name="loginBtn">Login</button>
+					<button input type="button" name="loginBtn" id="loginBtnId" 
+					onclick="adminLogin()" value="Submit">Login</button>
 				</div>
 				</form>
 				</div>

@@ -117,6 +117,10 @@ function studentApprove(){
   document.getElementById("adminApproveStudentForm").submit();
 }
 
+function adminLogin(){
+  document.getElementById("loginForm").submit();
+}
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom:13,

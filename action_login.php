@@ -10,9 +10,17 @@
 </head>
 <header>
 	<?php include 'header.php';?>
+	<?php include 'session.php';?>
+	<?php 
+	if (!isset($_SESSION['login_user']) || $_SESSION['login_user'] ==false){
+		header("Location: adminInlogg.php");
+	}
+
+	?>
 </header>
 <body>	<div class="portalh1"> 
 	<h1> Karnevalsportalen För Administratörer </h1>
+	<h5><a href = "logout.php">Sign Out</a></h5>
 </div>
 <div class="admin_crud_wrapper">
 	<div class="link_list_wrapper">
