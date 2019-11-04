@@ -8,6 +8,10 @@
 	margin-left:10%;
 }
 
+.biljett_info{
+	display:flex;
+}
+
 .portalh1 h5{
 	float:right;
 	color:black;
