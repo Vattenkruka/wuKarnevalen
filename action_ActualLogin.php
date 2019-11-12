@@ -20,6 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		$_SESSION['login_user'] =$USERNAME;
 		header("location:action_login.php");
 	} else {
+		header("location:adminInlogg.php");
 		$error = "Your username or password is invalid.";
 	}
 

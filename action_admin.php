@@ -9,7 +9,6 @@ if(!empty($USERNAME)) {
 	$sql = "INSERT INTO adminTable(username,password)
 	VALUES ('$USERNAME','$PASSWORD')";
 
-	echo "Hohoh";
 
 	if ($db_conn->query($sql) === TRUE) {
 		echo "<br />Du har skapat en admin!<br /><br />";
